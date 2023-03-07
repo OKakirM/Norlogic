@@ -1,0 +1,107 @@
+@import url("/css/colors.css");
+
+/* Fonts */
+.roboto {
+    font-family: "Roboto", sans-serif !important;
+}
+
+.russo {
+    font-family: "Russo One", sans-serif !important;
+}
+
+/* Navbar */
+.nav-detalhe {
+    position: relative;
+}
+
+.nav-detalhe::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0px solid #cc0033;
+    bottom: -10px;
+    left: 50%;
+    transition: 0.1s ease all;
+    transform: translateX(-50%);
+}
+
+.nav-detalhe:hover::after {
+    border-bottom: 10px solid #cc0033;
+    transition: 0.1s ease all;
+}
+
+.nav-smart-detalhe {
+    position: relative;
+}
+
+.nav-smart-detalhe::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    border-radius: 40px;
+    background-color: #cc0033;
+    bottom: -4px;
+    left: 50%;
+    transition: 0.2s ease all;
+    transform: translateX(-50%);
+}
+
+.nav-smart-detalhe:hover::after {
+    width: 80%;
+    transition: 0.2s ease all;
+}
+
+.bg-inicio {
+    background-image: url("/img/bg_inicio.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 86px;
+}
+
+.servico-detalhe {
+    transition: 0.2s ease all;
+}
+
+.col:hover .servico-detalhe {
+    color: #cc0033;
+    transition: 0.2s ease all;
+}
+
+.servico-img {
+    width: 110px;
+    height: 110px;
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: center;
+    border-radius: 10px 0px 10px 0px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background-color: #333333;
+    transition: 0.2s ease all;
+}
+
+.col:hover .servico-img {
+    background-color: #cc0033;
+    transition: 0.2 ease all;
+}
+
+.banner-detalhe {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: 0.2s ease all;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-auto:hover .banner-detalhe {
+    background-color: #590016;
+    transition: 0.2s ease all;
+}

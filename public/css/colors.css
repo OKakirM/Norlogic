@@ -1,0 +1,118 @@
+/* ^olors */
+.bg-b1 {
+    background-color: #000;
+}
+
+.color-b1 {
+    color: #000;
+}
+
+.bg-b2 {
+    background-color: #1a1919;
+}
+
+.color-b2 {
+    color: #1a1919;
+}
+
+.bg-b3 {
+    background-color: #333232;
+}
+
+.color-b3 {
+    color: #333232;
+}
+
+.bg-b4 {
+    background-color: #4d4b4b;
+}
+
+.color-b4 {
+    color: #4d4b4b;
+}
+
+.bg-b5 {
+    background-color: #666464;
+}
+
+.color-b5 {
+    color: #666464;
+}
+
+.bg-g {
+    background-color: #807d7d;
+}
+
+.color-g {
+    color: #807d7d;
+}
+
+.bg-w5 {
+    background-color: #999696;
+}
+
+.color-w5 {
+    color: #999696;
+}
+
+.bg-w4 {
+    background-color: #b2afaf;
+}
+
+.color-w4 {
+    color: #b2afaf;
+}
+
+.bg-w3 {
+    background-color: #ccc8c8;
+}
+
+.color-w3 {
+    color: #ccc8c8;
+    transition: 0.3s all ease;
+}
+
+.nav-item .color-w3:hover {
+    color: #fffafa;
+    transition: 0.3s all ease;
+}
+
+.bg-w2 {
+    background-color: #e5e1e1;
+}
+
+.color-w2 {
+    color: #e5e1e1;
+}
+
+.bg-w1 {
+    background-color: #fffafa;
+}
+
+.color-w1 {
+    color: #fffafa;
+}
+
+.bg-cinzaNor {
+    background-color: #333333;
+}
+
+.color-cinzaNor {
+    color: #333333;
+}
+
+.bg-redNor {
+    background-color: #cc0033;
+}
+
+.color-redNor {
+    color: #cc0033;
+}
+
+.bg-whiteNor {
+    background-color: #ffffff;
+}
+
+.color-whiteNor {
+    color: #ffffff;
+}
