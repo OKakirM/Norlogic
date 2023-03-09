@@ -72,16 +72,16 @@
                   </div>
                   <div class="d-flex justify-content-center align-items-center flex-row gap-3">
                     <li class="nav-item">
-                      <a href="#facebook" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="logo-facebook"></ion-icon></a>
+                      <a href="https://www.facebook.com/redfenixeng" target="_blank" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="logo-facebook"></ion-icon></a>
                     </li>
                     <li class="nav-item">
-                      <a href="#insta" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="logo-instagram"></ion-icon></a>
+                      <a href="https://www.instagram.com/redfenix.eng/?hl=pt" target="_blank" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="logo-instagram"></ion-icon></a>
                     </li>
                     <li class="nav-item">
-                      <a href="#email" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="mail-outline"></ion-icon></a>
+                      <a href="mailto:geral@redfenix.pt" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="mail-outline"></ion-icon></a>
                     </li>
                     <li class="nav-item">
-                      <a href="#telefone" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="call-outline"></ion-icon></a>
+                      <a href="tel:00351249119339" class="text-decoration-none color-w3 d-inline-block fs-4"><ion-icon name="call-outline"></ion-icon></a>
                     </li>
                   </div>
               </div>
@@ -106,16 +106,16 @@
             <div class="position-absolute collapse navbar-collapse end-0 top-0">
               <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3">
                 <li class="nav-item">
-                  <a href="#facebook" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="logo-facebook"></ion-icon></a>
+                  <a href="https://www.facebook.com/redfenixeng" target="_blank" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="logo-facebook"></ion-icon></a>
                 </li>
                 <li class="nav-item">
-                  <a href="#insta" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="logo-instagram"></ion-icon></a>
+                  <a href="https://www.instagram.com/redfenix.eng/?hl=pt" target="_blank" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="logo-instagram"></ion-icon></a>
                 </li>
                 <li class="nav-item">
-                  <a href="#email" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="mail-outline"></ion-icon></a>
+                  <a href="mailto:geral@redfenix.pt" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="mail-outline"></ion-icon></a>
                 </li>
                 <li class="nav-item">
-                  <a href="#telefone" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="call-outline"></ion-icon></a>
+                  <a href="tel:00351249119339" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="call-outline"></ion-icon></a>
                 </li>
               </ul>
             </div>
@@ -124,7 +124,7 @@
       </header>
 
       {{-- CONTENT --}}
-      <main>
+      <main class="position-relative">
         @yield("content")
       </main>
 
@@ -134,10 +134,10 @@
           <div class="d-lg-flex justify-content-between align-items-center">
             <div class="col-auto">
               <h5 class="color-w1 m-0" style="font-size: .875rem">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Norlogic</h5>
-              <p class="color-b5 m-0" style="font-size: .75rem">A Norlogic é uma marca registada em Portugal sob o número 591278 e propriedade da Norlogic Engenharia Lda.</p>
+              <p class="color-b5 m-0 mt-2" style="font-size: .75rem">A Norlogic é uma marca registada em Portugal sob o número 591278 e propriedade da Norlogic Engenharia Lda.</p>
             </div>
             <div class="col-auto">
-              <a href="/"><img src="/img/favicon.svg" width="50" alt=""></a>
+              <a href="/"><img class="d-lg-block d-none" src="/img/favicon.svg" width="50" alt=""></a>
             </div>
           </div>
         </div>

@@ -63,6 +63,7 @@
           <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
         </div>
       </div>
+    </div>
   </div>
 </div>
 
@@ -173,6 +174,32 @@
     </div>
   </div>
 </div>
+
+{{-- Produtos View --}}
+<div class="bg-black bg-opacity-50 w-100 h-100 z-3 position-fixed top-0 start-0 d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col">
+
+      </div>
+      <div class="col-6 bg-cinzaNor p-5" style="border-radius: 20px 5px 20px 5px; border: 3px solid #CC0033">
+        <h1 class="color-w1 fw-bold roboto">DROPS</h1>
+        <p class="color-w1 roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
+        <h5 class="color-w1 roboto">Especificações:</h5>
+        <ul class="color-g roboto">
+          <li>Chipset / GPU: NVIDIA GeForce RTX 2060 SUPER;</li>
+          <li>Memória vídeo: 8GB GDDR6 256 bit;</li>
+          <li>Interface: PCIe 3.0 x16;</li>
+          <li>Vel. Memória14.000 Mbps;</li>
+          <li>Interfaces na Placa: HDMI 2.0b*1, DisplayPort 1.4*3 e USB Type-C*1;</li>
+          <li>Resol. Max: Digital: 7680 x 4320@60Hz.</li>
+        </ul>
+        <a href="" class="bg-redNor py-2 px-4">Entrar em contacto</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 {{-- Produtos --}}
 <div class="bg-w2" id="products">
@@ -299,22 +326,22 @@
           </div>
           <label class="form-label roboto color-w1 m-0 mt-4 mb-1" for="message">Mensagem:</label>
           <textarea class="form-control input-contact" name="message" id="message" placeholder="Mensagem" style="height: 144px" required></textarea>
-          <button class="bg-redNor color-w1 roboto fw-bold d-block py-2 px-4 w-25 m-auto mt-4 rounded-1" style="border: 0" type="submit">ENVIAR</button>
+          <button class="bg-redNor color-w1 roboto fw-bold d-block py-2 px-4 m-auto mt-4 rounded-1 border-0" type="submit">ENVIAR</button>
         </form>
       </div>
     </div>
     <div class="d-lg-flex justify-content-center align-items-center mt-4 gap-5">
-      <div class="col-auto d-flex justify-content-start align-items-end h-100 flex-column contacto-detalhe">
-        <h4 class="roboto fw-bold color-w1 m-0">Local</h4>
-        <p class="roboto color-w4 text-end mt-2" style="font-size: .815rem">Alameda 1 de Março, nº 35 <br> 2300-431 Tomar - Portugal</p>
+      <div class="col-lg-auto d-lg-flex justify-content-start align-items-end h-100 flex-column">
+        <h4 class="roboto fw-bold color-w1 m-0 text-center">Local</h4>
+        <p class="roboto color-w4 text-lg-end mt-2 text-center" style="font-size: .815rem">Alameda 1 de Março, nº 35 <br> 2300-431 Tomar - Portugal</p>
       </div>
-      <div class="col-auto d-flex justify-content-start align-items-center h-100 flex-column contacto-detalhe">
-        <h4 class="roboto fw-bold color-w1 m-0">Email</h4>
-        <p class="roboto color-w4 text-end mt-2" style="font-size: .815rem">geral@redfenix.pt</p>
+      <div class="col-lg-auto d-lg-flex justify-content-start align-items-center h-100 flex-column">
+        <h4 class="roboto fw-bold color-w1 m-0 text-center">Email</h4>
+        <p class="roboto color-w4 text-lg-end mt-2 text-center" style="font-size: .815rem">geral@redfenix.pt</p>
       </div>
-      <div class="col-auto d-flex justify-content-start align-items-start h-100 flex-column">
-        <h4 class="roboto fw-bold color-w1 m-0">Telefone</h4>
-        <p class="roboto color-w4 text-end mt-2" style="font-size: .815rem">(00351) 249 119 339</p>
+      <div class="col-lg-auto d-lg-flex justify-content-start align-items-start h-100 flex-column">
+        <h4 class="roboto fw-bold color-w1 m-0 text-center">Telefone</h4>
+        <p class="roboto color-w4 text-lg-end text-center mt-2" style="font-size: .815rem">(00351) 249 119 339</p>
       </div>
     </div>
   </div>
