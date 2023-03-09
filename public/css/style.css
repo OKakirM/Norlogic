@@ -1,4 +1,5 @@
 @import url("/css/colors.css");
+@import url("/css/animations.css");
 
 /* Fonts */
 .roboto {
@@ -10,27 +11,24 @@
 }
 
 /* Navbar */
-.nav-detalhe {
+.nav-active {
+    color: #fffafa;
     position: relative;
+    transition: 0.3s all ease;
 }
 
-.nav-detalhe::after {
+.nav-active::after {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 0px solid #cc0033;
+    border-bottom: 10px solid #cc0033;
+    animation: nav-detalhe 0.2s ease;
     bottom: -10px;
     left: 50%;
-    transition: 0.1s ease all;
     transform: translateX(-50%);
-}
-
-.nav-detalhe:hover::after {
-    border-bottom: 10px solid #cc0033;
-    transition: 0.1s ease all;
 }
 
 .nav-smart-detalhe {
@@ -74,21 +72,26 @@
 }
 
 .servico-img {
+    position: relative;
+}
+
+.servico-img::after {
+    content: "";
+    position: absolute;
     width: 110px;
     height: 110px;
-    transform: translateY(-50%) rotate(45deg);
-    transform-origin: center;
-    border-radius: 10px 0px 10px 0px;
-    position: absolute;
-    top: 50%;
-    left: 10px;
+    z-index: 0;
     background-color: #333333;
+    left: 12px;
+    border-radius: 10px 0px 10px 0px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
     transition: 0.2s ease all;
 }
 
-.col:hover .servico-img {
+.col:hover .servico-img::after {
     background-color: #cc0033;
-    transition: 0.2 ease all;
+    transition: 0.2s ease all;
 }
 
 .banner-detalhe {
@@ -101,7 +104,148 @@
     left: 0;
 }
 
+.col-lg-auto:hover .banner-detalhe,
 .col-auto:hover .banner-detalhe {
     background-color: #590016;
     transition: 0.2s ease all;
+}
+
+.info-detalhe {
+    position: relative;
+}
+
+.info-detalhe::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #cc0033;
+}
+
+.borda-w3 {
+    border: 2px solid #ccc8c8;
+}
+
+.selection-detalhe {
+    position: relative;
+    cursor: pointer;
+}
+
+.selection-detalhe::after {
+    content: "";
+    background-color: #cc0033;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease all;
+}
+
+.selection-detalhe:hover::after {
+    transition: 0.2s ease all;
+    height: 5px;
+}
+
+.produto-detalhe {
+    position: absolute;
+    opacity: 0%;
+    background-color: #cc0033;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 20px 5px 20px 5px;
+    transition: 0.3s ease all;
+}
+
+.col-auto:hover .produto-detalhe {
+    transition: 0.3s ease all;
+    left: -10px;
+    bottom: 10px;
+    opacity: 50%;
+}
+
+.produtos-texto-detalhe {
+    position: relative;
+}
+
+.produtos-texto-detalhe::after {
+    content: "";
+    background-color: #cc0033;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+    width: 150px;
+    height: 2px;
+}
+
+.norlogic-titulo-detalhe {
+    position: relative;
+}
+
+.norlogic-titulo-detalhe::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 120px;
+    height: 3px;
+    background-color: #cc0033;
+    border-radius: 50px;
+}
+
+.video-detalhe {
+    position: absolute;
+    right: -50px;
+    bottom: -120px;
+    z-index: 0;
+    animation: float 6s ease-in-out infinite;
+}
+
+.parceiros-titulo-detalhe {
+    position: relative;
+}
+
+.parceiros-titulo-detalhe::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 120px;
+    height: 3px;
+    background-color: #cc0033;
+    border-radius: 50px;
+}
+
+.input-contact {
+    background-color: #4d4b4b !important;
+    border: 2px solid #4d4b4b !important;
+    color: #fffafa !important;
+    font-family: "Roboto" !important;
+    resize: none !important;
+}
+
+.input-contact::placeholder {
+    color: #b2afaf !important;
+}
+
+.contacto-detalhe {
+    position: relative;
+}
+
+.contacto-detalhe::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #cc0033;
+    right: -25px;
+    border-radius: 50px;
+    top: 0;
 }

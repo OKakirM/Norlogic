@@ -1,0 +1,21 @@
+/* Aniations */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes nav-detalhe {
+    0% {
+        border-bottom: 0px solid #cc0033;
+    }
+    100% {
+        border-bottom: 10px solid #cc0033;
+    }
+}

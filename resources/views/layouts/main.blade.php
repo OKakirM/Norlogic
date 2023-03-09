@@ -56,6 +56,7 @@
               <div class="d-lg-none d-block mt-4 mb-3">
                 <ul class="navbar-nav d-flex flex-column justify-content-center align-items-center gap-3">
                   <div class="d-flex justify-content-center align-items-center flex-row gap-3">
+                    {{-- Smartphone --}}
                     <li class="nav-item">
                       <a href="#service" class="text-decoration-none color-w3 d-inline-block nav-smart-detalhe">Serviços</a>
                     </li>
@@ -86,18 +87,19 @@
               </div>
             </div>
             <div class="position-absolute collapse navbar-collapse end-0 bottom-0">
-              <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3">
+              <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3" id="list-pc">
+                {{-- PC --}}
                 <li class="nav-item">
-                  <a href="#service" class="text-decoration-none color-w3 d-inline-block nav-detalhe">Serviços</a>
+                  <a href="#service" class="text-decoration-none color-w3 d-inline-block nav-detalhe nav-active" onclick="active_navbar(this.className)" id="nav-items">Serviços</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#products" class="text-decoration-none color-w3 d-inline-block nav-detalhe">Produtos</a>
+                  <a href="#products" class="text-decoration-none color-w3 d-inline-block nav-detalhe" id="nav-items">Produtos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#about" class="text-decoration-none color-w3 d-inline-block nav-detalhe">Sobre Nós</a>
+                  <a href="#about" class="text-decoration-none color-w3 d-inline-block nav-detalhe" id="nav-items">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="text-decoration-none color-w3 d-inline-block nav-detalhe">Contato</a>
+                  <a href="#contact" class="text-decoration-none color-w3 d-inline-block nav-detalhe" id="nav-items">Contato</a>
                 </li>
               </ul>
             </div>
