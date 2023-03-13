@@ -90,7 +90,7 @@
               <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3" id="list-pc">
                 {{-- PC --}}
                 <li class="nav-item">
-                  <a href="#service" class="text-decoration-none color-w3 d-inline-block nav-detalhe nav-active" onclick="active_navbar(this.className)" id="nav-items">Serviços</a>
+                  <a href="#service" class="text-decoration-none color-w3 d-inline-block nav-detalhe nav-active" id="nav-items">Serviços</a>
                 </li>
                 <li class="nav-item">
                   <a href="#products" class="text-decoration-none color-w3 d-inline-block nav-detalhe" id="nav-items">Produtos</a>
