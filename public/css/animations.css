@@ -2,12 +2,15 @@
 @keyframes float {
     0% {
         transform: translatey(0px);
+        opacity: 50%;
     }
     50% {
         transform: translatey(-10px);
+        opacity: 100%;
     }
     100% {
         transform: translatey(0px);
+        opacity: 50%;
     }
 }
 

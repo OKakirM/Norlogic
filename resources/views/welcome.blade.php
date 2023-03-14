@@ -12,6 +12,7 @@
           <p class="roboto color-w3 m-0 fs-5">Hardware & Software</p>
           <h1 class="display-5 russo color-w1 mt-1">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
         </div>
+        {{-- MOBILE --}}
         <div class="z-2 d-md-none d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
           <p class="roboto color-w3 m-0 fs-5 text-center">Hardware & Software</p>
           <h1 class="display-5 russo color-w1 mt-1 text-center">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
@@ -20,19 +21,20 @@
       <div class="carousel-item">
         <img src="/img/carrosel2.png" class="d-block h-100" alt="">
         <div class="carousel-caption d-none d-md-block">
-          <p class="roboto color-w3 m-0 fs-5">Hardware & Software</p>
-          <h1 class="display-5 russo color-w1 mt-1">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
+          <p class="roboto color-w3 m-0 fs-5">Serviço & Manutenção</p>
+          <h1 class="display-5 russo color-w1 mt-1">SISTEMAS OPERATIVOS E TELEMÓVEIS<span class="color-redNor">.</span></h5>
         </div>
-        <div class="z-2 d-md-none d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
-          <p class="roboto color-w3 m-0 fs-5 text-center">Hardware & Software</p>
-          <h1 class="display-5 russo color-w1 mt-1 text-center">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
+        {{-- MOBILE --}}
+        <div class="z-2 d-md-none d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle w-75">
+          <p class="roboto color-w3 m-0 fs-5 text-center">Serviço & Manutenção</p>
+          <h1 class="display-5 russo color-w1 mt-1 text-center">SISTEMAS OPERATIVOS E TELEMÓVEIS<span class="color-redNor">.</span></h5>
         </div>    
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#autoplaying" data-bs-slide="prev">
+      <button class="position-absolute top-0 bottom-0 z-2 bg-transparent border-0 opacity-25 text-center p-0 d-md-flex d-none align-items-center justify-content-center" style="width: 5%" type="button" data-bs-target="#autoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#autoplaying" data-bs-slide="next">
+      <button class="position-absolute top-0 bottom-0 end-0 z-2 bg-transparent border-0 opacity-25 text-center p-0 d-md-flex d-none align-items-center justify-content-center" style="width: 5%" type="button" data-bs-target="#autoplaying" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -102,25 +104,8 @@
         <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">aptidões</h2>
       </div>
     </div>
-    <div class="d-lg-flex mt-5">
+    <div class="d-lg-flex mt-5 mb-5">
       <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3">
-        <ion-icon class="fs-1 color-redNor" name="globe-outline"></ion-icon>
-        <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Web Development</h4>
-        <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-      </div>
-      <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3">
-        <ion-icon class="fs-1 color-redNor" name="construct-outline"></ion-icon>
-        <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Robótica & Hardware</h4>
-        <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-      </div>
-      <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3">
-        <ion-icon class="fs-1 color-redNor" name="construct-outline"></ion-icon>
-        <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Robótica & Hardware</h4>
-        <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-      </div>
-    </div>
-    <div class="d-lg-flex mb-5">
-      <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3" >
         <ion-icon class="fs-1 color-redNor" name="globe-outline"></ion-icon>
         <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Web Development</h4>
         <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -139,64 +124,158 @@
   </div>
 </div>
 
-{{-- Projetos Desenvolvidos --}}
+
 <div class="bg-w1">
-  <div class="container-fluid py-lg-5 p-0 overflow-hidden">
+  <div class="container-lg container-fluid py-lg-5 p-0 overflow-hidden">
     <div class="row justify-content-center align-items-center mt-5">
       <div class="col-auto">
         <h6 class="roboto text-center m-0 mb-1 color-redNor text-center">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor text-center" style="letter-spacing: 0.05em;">projetos desenvolvidos</h2>
+        <h2 class="russo text-center display-5 color-cinzaNor text-center" style="letter-spacing: 0.05em;">projetos</h2>
       </div>
     </div>
-    <div class="d-lg-flex justify-content-center mt-5 mb-lg-5 gap-2">
-      <div class="col-lg-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden" style="height: 450px">
-        <div class="banner-detalhe"></div>
-        <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
-        <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3 d-lg-block d-none">
-          <h4 class="fw-bold roboto fs-3 info-detalhe">Robôs em <br> Arduino</h4>
-          <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+    {{-- PC --}}
+    <div id="projetosCarrousel" class="d-lg-block d-none carousel slide mt-5 mb-lg-5 ">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-5">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+              <div class="banner-detalhe"></div>
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+              <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
+                <h4 class="fw-bold roboto fs-3 info-detalhe">Robôs em <br> Arduino</h4>
+                <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+              </div>
+            </div>
+
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+              <div class="banner-detalhe"></div>
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+              <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+                <h4 class="fw-bold roboto fs-3 info-detalhe">Leitores de <br> Cartão</h4>
+                <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+              </div>
+            </div>
+
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+              <div class="banner-detalhe"></div>
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+              <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+                <h4 class="fw-bold roboto fs-3 info-detalhe">Próteses <br> Mecânicas</h4>
+                <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3 d-lg-none d-block">
-          <h4 class="fw-bold roboto display-4 info-detalhe ">Robôs em <br> Arduino</h4>
-          <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-5">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+              <div class="banner-detalhe"></div>
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+              <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
+                <h4 class="fw-bold roboto fs-3 info-detalhe">Robôs em <br> Arduino</h4>
+                <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+              </div>
+            </div>
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+              <div class="banner-detalhe"></div>
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+              <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+                <h4 class="fw-bold roboto fs-3 info-detalhe">Leitores de <br> Cartão</h4>
+                <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+              </div>
+            </div>
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+              <div class="banner-detalhe"></div>
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+              <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+                <h4 class="fw-bold roboto fs-3 info-detalhe">Próteses <br> Mecânicas</h4>
+                <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden" style="height: 450px">
-        <div class="banner-detalhe"></div>
-        <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
-        <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3 d-lg-block d-none">
-          <h4 class="fw-bold roboto fs-3 info-detalhe">Leitores de <br> Cartão</h4>
-          <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+      <button class="carousel-control-prev w-auto" type="button" data-bs-target="#projetosCarrousel" data-bs-slide="prev">
+        <ion-icon class="color-w1 fs-2 bg-redNor p-2 rounded-5" name="chevron-back-outline"></ion-icon>
+      </button>
+      <button class="carousel-control-next w-auto" type="button" data-bs-target="#projetosCarrousel" data-bs-slide="next">
+        <ion-icon class="color-w1 fs-2 bg-redNor p-2 rounded-5" name="chevron-forward-outline"></ion-icon>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    {{-- MOBILE --}}
+    <div id="projetosCarrouselMobile" class="d-lg-none d-block carousel slide mt-2 mb-lg-5 ">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+            <div class="banner-detalhe"></div>
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+            <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
+              <h4 class="fw-bold roboto display-4 info-detalhe ">Robôs em <br> Arduino</h4>
+              <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+            </div>
+          </div>
         </div>
-        <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3 d-lg-none d-block">
-          <h4 class="fw-bold roboto display-4 info-detalhe">Leitores de <br> Cartão</h4>
-          <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+        <div class="carousel-item">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+            <div class="banner-detalhe"></div>
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+            <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+              <h4 class="fw-bold roboto display-4 info-detalhe">Leitores de <br> Cartão</h4>
+              <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+            <div class="banner-detalhe"></div>
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+            <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+              <h4 class="fw-bold roboto display-4 info-detalhe">Próteses <br> Mecânicas</h4>
+              <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+            <div class="banner-detalhe"></div>
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+            <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
+              <h4 class="fw-bold roboto display-4 info-detalhe ">Robôs em <br> Arduino</h4>
+              <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+            <div class="banner-detalhe"></div>
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+            <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+              <h4 class="fw-bold roboto display-4 info-detalhe">Leitores de <br> Cartão</h4>
+              <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+            <div class="banner-detalhe"></div>
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+            <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
+              <h4 class="fw-bold roboto display-4 info-detalhe">Próteses <br> Mecânicas</h4>
+              <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden" style="height: 450px">
-        <div class="banner-detalhe"></div>
-        <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
-        <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3 d-lg-block d-none">
-          <h4 class="fw-bold roboto fs-3 info-detalhe">Próteses <br> Mecânicas</h4>
-          <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-        </div>
-        <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3 d-lg-none d-block">
-          <h4 class="fw-bold roboto display-4 info-detalhe">Próteses <br> Mecânicas</h4>
-          <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-        </div>
-      </div>
-      <div class="col-lg-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden" style="height: 450px">
-        <div class="banner-detalhe"></div>
-        <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto4.png" alt="">
-        <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3 d-lg-block d-none">
-          <h4 class="fw-bold roboto fs-3 info-detalhe">Software de <br> Gestão</h4>
-          <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-        </div>
-        <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3 d-lg-none d-block">
-          <h4 class="fw-bold roboto display-4 info-detalhe">Software de <br> Gestão</h4>
-          <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-        </div>
-      </div>
+
+      <button class="carousel-control-prev w-auto d-lg-none d-block" type="button" data-bs-target="#projetosCarrouselMobile" data-bs-slide="prev">
+        <ion-icon class="color-w1 fs-2 p-2 rounded-5" name="chevron-back-outline"></ion-icon>
+      </button>
+      <button class="carousel-control-next w-auto d-lg-none d-block" type="button" data-bs-target="#projetosCarrouselMobile" data-bs-slide="next">
+        <ion-icon class="color-w1 fs-2 p-2 rounded-5" name="chevron-forward-outline"></ion-icon>
+      </button>
     </div>
   </div>
 </div>
@@ -261,7 +340,7 @@
       </div>
     </div>
     {{-- HARDWARE --}}
-    <div class="d-lg-flex mt-5 justify-content-xxl-between justify-content-center align-items-center flex-wrap gap-5" id="hardware">
+    <div class="d-lg-flex mt-5 mb-5 justify-content-xxl-between justify-content-center align-items-center flex-wrap gap-5" id="hardware">
       <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative" style="width: 350px;">
         <div class="produto-detalhe"></div>
         <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
@@ -321,7 +400,7 @@
       </div>
     </div>
     {{-- SOFTWARE --}}
-    <div class="d-none mt-5 justify-content-xxl-between justify-content-center align-items-center flex-wrap gap-5" id="software">
+    <div class="d-none mt-5 mb-5 justify-content-xxl-between justify-content-center align-items-center flex-wrap gap-5" id="software">
       <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative" style="width: 350px;">
         <div class="produto-detalhe"></div>
         <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
@@ -380,14 +459,6 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center mt-5">
-      <div class="col-auto">
-        <a href="" class="text-decoration-none d-flex justify-content-center align-items-center flex-column">
-          <h6 class="roboto color-g m-0">Ver Mais</h6>
-          <ion-icon class="color-g" name="caret-down-outline"></ion-icon>
-        </a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -417,16 +488,21 @@
 
 {{-- Parceiros --}}
 <div class="bg-b2 position-relative">
-  <div class="container py-3">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col d-flex justify-content-start aling-items-center">
+        <h5 class="russo color-b3">marcas <span class="color-redNor">/</span> afiliados</h5>
+      </div>
+    </div>
     <div class="d-sm-flex justify-content-center align-items-center gap-5">
      <div class="col-auto d-flex justify-content-center align-items-center">
-      <img src="/img/logo_adspot.svg" width="150px" alt="">
+      <img src="/img/logo_adspot.png" width="150px" alt="">
      </div>
      <div class="col-auto d-flex justify-content-center align-items-center mt-2">
-      <img src="/img/logo_adspot.svg" width="150px" alt="">
+      <img src="/img/logo_becurious.svg" width="150px" alt="">
      </div>
      <div class="col-auto d-flex justify-content-center align-items-center mt-2">
-      <img src="/img/logo_adspot.svg" width="150px" alt="">
+      <img src="/img/logo_redfenix.png" width="150px" alt="">
      </div>
     </div>
   </div>
@@ -461,7 +537,7 @@
         <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">contacto</h2>
       </div>
     </div>
-    <div class="row justify-content-end align-items-center mt-5 ">
+    <div class="row justify-content-end align-items-center mt-5 mb-5">
       <div class="col-lg-6 z-1 bg-cinzaNor d-flex justify-content-center align-items-center flex-column p-5" style="border: 3px solid #CC0033; border-radius: 40px 5px 40px 5px;">
         <h2 class="roboto color-w1 fw-bold justify-self-center align-self-start">Envie-nos uma mensagem<span class="color-redNor">!</span></h2>
         <form class="w-100 d-lg-flex justify-content-center aling-items-center flex-column" action="">

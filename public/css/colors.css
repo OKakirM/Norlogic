@@ -8,89 +8,89 @@
 }
 
 .bg-b2 {
-    background-color: #1a1919;
+    background-color: #1a1a1a;
 }
 
 .color-b2 {
-    color: #1a1919;
+    color: #1a1a1a;
 }
 
 .bg-b3 {
-    background-color: #333232;
+    background-color: #333333;
 }
 
 .color-b3 {
-    color: #333232;
+    color: #333333;
 }
 
 .bg-b4 {
-    background-color: #4d4b4b;
+    background-color: #4d4d4d;
 }
 
 .color-b4 {
-    color: #4d4b4b;
+    color: #4d4d4d;
 }
 
 .bg-b5 {
-    background-color: #666464;
+    background-color: #666666;
 }
 
 .color-b5 {
-    color: #666464;
+    color: #666666;
 }
 
 .bg-g {
-    background-color: #807d7d;
+    background-color: #808080;
 }
 
 .color-g {
-    color: #807d7d;
+    color: #808080;
 }
 
 .bg-w5 {
-    background-color: #999696;
+    background-color: #999999;
 }
 
 .color-w5 {
-    color: #999696;
+    color: #999999;
 }
 
 .bg-w4 {
-    background-color: #b2afaf;
+    background-color: #b3b3b3;
 }
 
 .color-w4 {
-    color: #b2afaf;
+    color: #b3b3b3;
 }
 
 .bg-w3 {
-    background-color: #ccc8c8;
+    background-color: #cccccc;
 }
 
 .color-w3 {
-    color: #ccc8c8;
+    color: #cccccc;
     transition: 0.3s all ease;
 }
 
 .nav-item .color-w3:hover {
-    color: #fffafa;
+    color: #fff;
     transition: 0.3s all ease;
 }
 
 .bg-w2 {
-    background-color: #e5e1e1;
+    background-color: #e6e6e6;
 }
 
 .color-w2 {
-    color: #e5e1e1;
+    color: #e6e6e6;
 }
 
 .bg-w1 {
-    background-color: #fffafa;
+    background-color: #fff;
 }
 
 .color-w1 {
-    color: #fffafa;
+    color: #fff;
 }
 
 .bg-cinzaNor {
