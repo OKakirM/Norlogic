@@ -67,7 +67,8 @@
     transition: 0.2s ease all;
 }
 
-.col:hover .servico-detalhe {
+.col:hover .servico-detalhe,
+.produto-col:hover .servico-detalhe {
     color: #cc0033;
     transition: 0.2s ease all;
 }
@@ -84,14 +85,16 @@
     z-index: 0;
     background-color: #333333;
     left: 20px;
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 15px 0px 15px 0px;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
     transition: 0.2s ease all;
 }
 
-.col:hover .servico-img::after {
+.col:hover .servico-img::after,
+.produto-col:hover .servico-img::after {
     background-color: #cc0033;
+    transform: translateY(-50%) rotate(45deg) translateX(-5px) translateY(5px);
     transition: 0.2s ease all;
 }
 
@@ -130,9 +133,16 @@
     border-radius: 20px 5px 20px 5px;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .projeto-border-radius {
         border-radius: 0px;
+    }
+    .unfocus {
+        display: none !important;
+    }
+
+    .focus {
+        animation: leftAnim 0.3s ease;
     }
 }
 
@@ -188,6 +198,24 @@
     border-radius: 20px;
     width: 150px;
     height: 2px;
+}
+
+.unfocus {
+    transform: scale(0.8);
+    opacity: 0.2;
+    transition: 0.3s ease all;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+}
+
+.focus {
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.3s ease all;
+    display: flex;
 }
 
 .norlogic-titulo-detalhe {
