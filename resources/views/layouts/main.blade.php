@@ -48,8 +48,8 @@
       <header class="position-fixed top-0 w-100 z-3 roboto" style="border-bottom: 5px solid #CC0033">
         <nav class="navbar navbar-expand-lg bg-cinzaNor py-2">
           <div class="container position-relative">
-            <a href="#home" class="d-lg-none d-inline-block p-2"><img src="/img/logo_norlogic.png" width="200" alt="Logo StrikeTatto"></a>
-            <a href="#" class="text-decoration-none text-light fs-4 p-2 d-lg-none d-block" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><ion-icon name="grid-outline"></ion-icon></a>
+            <a href="#home" class="d-lg-none d-inline-block"><img src="/img/logo_norlogic.png" width="200" alt="Logo StrikeTatto"></a>
+            <a href="#" class="text-decoration-none text-light fs-4 p-2 d-lg-none d-block" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><ion-icon class="menu-icon p-2" name="grid-outline"></ion-icon></a>
             <div class="collapse navbar-collapse justify-content-center me-auto" id="navbarNav">
               <ul class="navbar-nav d-flex justify-content-center align-items-center">
                 <li class="nav-item d-lg-inline-block d-none">

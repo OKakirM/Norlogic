@@ -101,12 +101,26 @@
     color: #333333;
 }
 
+.borda-cinzaNor {
+    transition: 0.2s ease all;
+    border: 2px solid #333333;
+}
+
+.borda-cinzaNor:hover {
+    border: 2px solid #cc0033;
+    transition: 0.2s ease all;
+}
+
 .bg-redNor {
     background-color: #cc0033;
 }
 
 .color-redNor {
     color: #cc0033;
+}
+
+.borda-redNor {
+    border: 2px solid #cc0033;
 }
 
 .bg-whiteNor {

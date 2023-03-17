@@ -68,7 +68,7 @@
 }
 
 .col:hover .servico-detalhe,
-.produto-col:hover .servico-detalhe {
+.col-lg-6:hover .servico-detalhe {
     color: #cc0033;
     transition: 0.2s ease all;
 }
@@ -92,7 +92,7 @@
 }
 
 .col:hover .servico-img::after,
-.produto-col:hover .servico-img::after {
+.col-lg-6:hover .servico-img::after {
     background-color: #cc0033;
     transform: translateY(-50%) rotate(45deg) translateX(-5px) translateY(5px);
     transition: 0.2s ease all;
@@ -178,44 +178,69 @@
     transition: 0.3s ease all;
 }
 
-.col-auto:hover .produto-detalhe {
-    transition: 0.3s ease all;
-    left: -10px;
-    bottom: 10px;
-    opacity: 50%;
-}
-
-.produtos-texto-detalhe {
+.versions {
     position: relative;
+    transition: 0.3s ease all;
 }
 
-.produtos-texto-detalhe::after {
+.versions:nth-child(2)::after,
+.versions:nth-child(1)::after {
+    content: "";
+    background-color: #333;
+    width: 3px;
+    height: 50%;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.versions:hover {
+    color: #cc0033;
+    transition: 0.3s ease all;
+}
+
+.unselected {
+    background-color: #4d4d4d;
+    color: #fff;
+    position: relative;
+    transition: 0.3s ease all;
+}
+
+.selected {
+    background-color: #fff;
+    color: #333;
+    position: relative;
+    transition: 0.3s ease all;
+}
+
+.selected::after {
     content: "";
     background-color: #cc0033;
+    width: 100%;
+    height: 5px;
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
-    border-radius: 20px;
-    width: 150px;
-    height: 2px;
-}
-
-.unfocus {
-    transform: scale(0.8);
-    opacity: 0.2;
     transition: 0.3s ease all;
-    pointer-events: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    display: flex;
 }
 
-.focus {
-    transform: scale(1);
+.img-selected {
     opacity: 1;
+    border: 2px solid #cc0033;
     transition: 0.3s ease all;
-    display: flex;
+}
+
+.img-deselected {
+    opacity: 0.2;
+    border: 2px solid #333;
+    transition: 0.3s ease all;
+}
+
+.img-deselected:hover {
+    opacity: 1;
+    border: 2px solid #333;
+    transition: 0.3s ease all;
 }
 
 .norlogic-titulo-detalhe {

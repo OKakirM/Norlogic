@@ -280,206 +280,7 @@
   </div>
 </div>
 
-{{-- Produtos View --}}
-<div class="d-none bg-black bg-opacity-50 w-100 h-100 z-3 position-fixed top-0 start-0 justify-content-center align-items-center" id="popup">
-  <div class="container">
-    <ion-icon name="close-outline" class="d-lg-block d-none position-absolute end-0 top-0 color-w1 fs-1 p-4" style="cursor: pointer;" onclick="closePopup()"></ion-icon>
-    <div class="d-flex justify-content-center align-items-center gap-5 flex-lg-row flex-column">
-      <div class="col-auto d-lg-block d-none">
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center rounded-1 border-2 border" style="height: 450px; width: 350px">
-          <img id="full-image" class="img-fluid z-1 w-auto h-auto" src="" alt="">
-        </div>
-        <div class="d-flex justify-content-between align-items-center mt-4">
-          <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center rounded-1 border-2 border " style="width: 100px; height:100px">
-            <img id="preview_1" class="img-fluid z-1" onclick="setImage(this)" src="" alt="" style="cursor: pointer;">
-          </div>
-          <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center rounded-1 border-2 border " style="width: 100px; height:100px">
-            <img id="preview_2" class="img-fluid z-1" onclick="setImage(this)" src="" alt="" style="cursor: pointer;">
-          </div>
-          <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center rounded-1 border-2 border " style="width: 100px; height:100px">
-            <img id="preview_3" class="img-fluid z-1" onclick="setImage(this)" src="" alt="" style="cursor: pointer;">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-auto bg-cinzaNor p-5 position-relative" style="border-radius: 20px 5px 20px 5px; border: 3px solid #CC0033">
-        <ion-icon name="close-outline" class="d-lg-none d-block position-absolute end-0 top-0 color-w1 fs-1 p-2 z-2" style="cursor: pointer;" onclick="closePopup()"></ion-icon>
-        <div id="versions" class="position-absolute top-0 end-0 p-5 d-none fs-5">
-          <a class="color-w1 text-decoration-none" style="cursor: pointer"
-          comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto1.jpg" 
-          preview_2="/img/drops1_preview1.jpg" 
-          preview_3="/img/drops1_preview2.jpg" onclick="changeInfo(this)" id="version1">V.1</a>
-          <a class="color-g text-decoration-none" style="cursor: pointer"
-          comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto3.jpg" 
-          preview_2="/img/drops2_preview1.jpg" 
-          preview_3="/img/drops2_preview2.jpg" onclick="changeInfo(this)" id="version2">V.2</a>
-          <a class="color-g text-decoration-none" style="cursor: pointer"
-          comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto1.jpg" 
-          preview_2="/img/drops1_preview1.jpg" 
-          preview_3="/img/drops1_preview2.jpg" onclick="changeInfo(this)" id="version3">V.3</a>
-        </div>
-        <h1 class="color-w1 fw-bold roboto produtos-texto-detalhe d-inline-block" id="titulo"></h1>
-        <p class="color-w1 roboto mt-3" id="comentario"></p>
-        <h5 class="color-w1 roboto fw-bold">Especificações:</h5>
-        <ul class="color-g roboto">
-          <li>Chipset / GPU: NVIDIA GeForce RTX 2060 SUPER;</li>
-          <li>Memória vídeo: 8GB GDDR6 256 bit;</li>
-          <li>Interface: PCIe 3.0 x16;</li>
-          <li>Vel. Memória14.000 Mbps;</li>
-          <li>Interfaces na Placa: HDMI 2.0b*1, DisplayPort 1.4*3 e USB Type-C*1;</li>
-          <li>Resol. Max: Digital: 7680 x 4320@60Hz.</li>
-        </ul>
-        <a href="" class="bg-redNor py-2 rounded-1 mt-3 d-inline-block px-4 text-decoration-none fw-bold color-w1 roboto">ENTRAR EM CONTACTO</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-{{-- Produtos v.1 --}}
-{{-- <section class="bg-w2" id="products">
-  <div class="container py-5">
-    <div class="row justify-content-center align-items-center mt-5">
-      <div class="col-auto">
-        <h6 class="roboto text-center m-0 mb-1 color-redNor">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">produtos</h2>
-      </div>
-    </div>
-    <div class="d-lg-flex mt-lg-5 mt-2">
-      <div class="col bg-w1 d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3 selection-detalhe" style="cursor: pointer" id="hardware-selection" onclick="changeSelection(this)">
-        <ion-icon class="fs-2 color-redNor" name="hardware-chip-outline"></ion-icon>
-        <h5 class="m-0 roboto color-cinzaNor">Hardware</h5>
-      </div>
-      <div class="col bg-w1 d-flex mt-lg-0 mt-3 justify-content-lg-start justify-content-center align-items-center gap-2 p-3" style="cursor: pointer" id="software-selection" onclick="changeSelection(this)">
-        <ion-icon class="fs-2 color-redNor" name="apps-outline"></ion-icon>
-        <h5 class="m-0 roboto color-cinzaNor">Software</h5>
-      </div>
-    </div>
-    HARDWARE
-    <div class="d-lg-flex mt-5 mb-5 justify-content-xxl-between justify-content-center align-items-center flex-wrap gap-5" id="hardware">
-      <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative" style="width: 350px;">
-        <div class="produto-detalhe"></div>
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
-          Information
-          <div comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto1.jpg" 
-          preview_2="/img/drops1_preview1.jpg" 
-          preview_3="/img/drops1_preview2.jpg"></div>
-
-          <div class="banner-detalhe"></div>
-          <img class="img-fluid z-1" style="opacity: 80%; cursor: pointer;" src="/img/produto1.jpg" alt="">
-        </div>
-        <div class="z-1 bg-w1 p-3 d-flex flex-column justify-content-center align-items-start position-relative" style="border-radius: 0px 0px 20px 5px">
-          <h4 class="m-0 fw-bold roboto color-b1 produtos-texto-detalhe">DROPS</h4>
-          <p class="m-0 text-break roboto mt-2 color-b3">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-          <a href="#" class="mt-4 roboto color-redNor text-decoration-none position-relative" style="font-size: .875rem">Ler mais <ion-icon class="position-absolute top-50 translate-middle-y ms-1" name="arrow-forward-outline"></ion-icon></a>
-        </div>
-      </div>
-      <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative mt-4" style="width: 350px;">
-        <div class="produto-detalhe"></div>
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
-          Information
-          <div comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DQPOOL"
-          preview_1="/img/produto2.jpg" 
-          preview_2="/img/dqpool_preview1.jpg" 
-          preview_3="/img/dqpool_preview2.jpg"></div>
-
-          <div class="banner-detalhe"></div>
-          <img class="img-fluid z-1" style="opacity: 80%; cursor: pointer;" src="/img/produto2.jpg" alt="">
-        </div>
-        <div class="z-1 bg-w1 p-3 d-flex flex-column justify-content-center align-items-start position-relative" style="border-radius: 0px 0px 20px 5px">
-          <h4 class="m-0 fw-bold roboto color-b1 produtos-texto-detalhe">DQPOOL</h4>
-          <p class="m-0 text-break roboto mt-2 color-b3">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-          <a href="#" class="mt-4 roboto color-redNor text-decoration-none position-relative" style="font-size: .875rem">Ler mais <ion-icon class="position-absolute top-50 translate-middle-y ms-1" name="arrow-forward-outline"></ion-icon></a>
-        </div>
-      </div>
-      <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative mt-4" style="width: 350px;">
-        <div class="produto-detalhe"></div>
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
-          Information
-          <div comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto3.jpg" 
-          preview_2="/img/drops2_preview1.jpg" 
-          preview_3="/img/drops2_preview2.jpg"></div>
-
-          <div class="banner-detalhe"></div>
-          <img class="img-fluid z-1" style="opacity: 80%; cursor: pointer;" src="/img/produto3.jpg" alt="">
-        </div>
-        <div class="z-1 bg-w1 p-3 d-flex flex-column justify-content-center align-items-start position-relative" style="border-radius: 0px 0px 20px 5px">
-          <h4 class="m-0 fw-bold roboto color-b1 produtos-texto-detalhe">DROPS</h4>
-          <p class="m-0 text-break roboto mt-2 color-b3">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-          <a href="#" class="mt-4 roboto color-redNor text-decoration-none position-relative" style="font-size: .875rem">Ler mais <ion-icon class="position-absolute top-50 translate-middle-y ms-1" name="arrow-forward-outline"></ion-icon></a>
-        </div>
-      </div>
-    </div>
-    SOFTWARE
-    <div class="d-none mt-5 mb-5 justify-content-xxl-between justify-content-center align-items-center flex-wrap gap-5" id="software">
-      <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative" style="width: 350px;">
-        <div class="produto-detalhe"></div>
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
-          <div comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto1.jpg" 
-          preview_2="/img/drops1_preview1.jpg" 
-          preview_3="/img/drops1_preview2.jpg"></div>
-
-          <div class="banner-detalhe"></div>
-          <img class="img-fluid z-1" style="opacity: 80%; cursor: pointer;" src="/img/produto2.jpg" alt="">
-        </div>
-        <div class="z-1 bg-w1 p-3 d-flex flex-column justify-content-center align-items-start position-relative" style="border-radius: 0px 0px 20px 5px">
-          <h4 class="m-0 fw-bold roboto color-b1 produtos-texto-detalhe">DROPS</h4>
-          <p class="m-0 text-break roboto mt-2 color-b3">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-          <a href="#" class="mt-4 roboto color-redNor text-decoration-none position-relative" style="font-size: .875rem">Ler mais <ion-icon class="position-absolute top-50 translate-middle-y ms-1" name="arrow-forward-outline"></ion-icon></a>
-        </div>
-      </div>
-      <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative mt-4" style="width: 350px;">
-        <div class="produto-detalhe"></div>
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
-          <div comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DQPOOL"
-          preview_1="/img/produto2.jpg" 
-          preview_2="/img/dqpool_preview1.jpg" 
-          preview_3="/img/dqpool_preview2.jpg"></div>
-
-          <div class="banner-detalhe"></div>
-          <img class="img-fluid z-1" style="opacity: 80%; cursor: pointer;" src="/img/produto2.jpg" alt="">
-        </div>
-        <div class="z-1 bg-w1 p-3 d-flex flex-column justify-content-center align-items-start position-relative" style="border-radius: 0px 0px 20px 5px">
-          <h4 class="m-0 fw-bold roboto color-b1 produtos-texto-detalhe">DQPOOL</h4>
-          <p class="m-0 text-break roboto mt-2 color-b3">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-          <a href="#" class="mt-4 roboto color-redNor text-decoration-none position-relative" style="font-size: .875rem">Ler mais <ion-icon class="position-absolute top-50 translate-middle-y ms-1" name="arrow-forward-outline"></ion-icon></a>
-        </div>
-      </div>
-      <div class="col-auto m-lg-0 m-auto p-0 h-100 position-relative mt-4" style="width: 350px;">
-        <div class="produto-detalhe"></div>
-        <div class="position-relative overflow-hidden d-flex jusity-content-center align-items-center" style="width: 350px; height: 250px; border-radius: 20px 5px 0px 0px" onclick="openPopup(this)">
-          <div comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto3.jpg" 
-          preview_2="/img/drops2_preview1.jpg" 
-          preview_3="/img/drops2_preview2.jpg"></div>
-
-          <div class="banner-detalhe"></div>
-          <img class="img-fluid z-1" style="opacity: 80%; cursor: pointer;" src="/img/produto2.jpg" alt="">
-        </div>
-        <div class="z-1 bg-w1 p-3 d-flex flex-column justify-content-center align-items-start position-relative" style="border-radius: 0px 0px 20px 5px">
-          <h4 class="m-0 fw-bold roboto color-b1 produtos-texto-detalhe">DROPS</h4>
-          <p class="m-0 text-break roboto mt-2 color-b3">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-          <a href="#" class="mt-4 roboto color-redNor text-decoration-none position-relative" style="font-size: .875rem">Ler mais <ion-icon class="position-absolute top-50 translate-middle-y ms-1" name="arrow-forward-outline"></ion-icon></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> --}}
-
-{{-- Produtos v.2 --}}
+{{-- Produtos --}}
 <section class="bg-w2" id="products">
   <div class="container py-5">
     <div class="row justify-content-center align-items-center mt-5">
@@ -489,81 +290,272 @@
       </div>
     </div>
 
-    {{-- Selection --}}
-    <div class="d-lg-flex mt-lg-5 mt-2 overflow-hidden">
-      <div class="col bg-w1 d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3 selection-detalhe" style="cursor: pointer" id="hardware-selection1" onclick="changeSelection(this)" data-aos="fade-right">
-        <ion-icon class="fs-2 color-redNor" name="hardware-chip-outline"></ion-icon>
-        <h5 class="m-0 roboto color-cinzaNor">Hardware</h5>
+    <div class="d-lg-flex d-none mt-lg-5 mt-2 overflow-hidden" data-aos="fade-down">
+      <div class="col d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3 selected" style="cursor: pointer" onclick="changeSelection(this)" id="drops_selection">
+        <h5 class="m-0 russo">Drops</h5>
       </div>
-      <div class="col bg-w1 d-flex mt-lg-0 mt-3 justify-content-lg-start justify-content-center align-items-center gap-2 p-3" style="cursor: pointer" id="software-selection1" onclick="changeSelection(this)" data-aos="fade-left">
-        <ion-icon class="fs-2 color-redNor" name="apps-outline"></ion-icon>
-        <h5 class="m-0 roboto color-cinzaNor">Software</h5>
+      <div class="col d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3 unselected" style="cursor: pointer" onclick="changeSelection(this)" id="dqpool_selection">
+        <h5 class="m-0 russo">DQPool</h5>
+      </div>
+      <div class="col d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3 unselected" style="cursor: pointer" onclick="changeSelection(this)" id="adspot_selection">
+        <h5 class="m-0 russo">AdSpot</h5>
+      </div>
+    </div>
+
+    <div class="d-lg-none d-flex flex-column position-relative mt-lg-5 mt-2 overflow-hidden collapse_offcanvas">
+      <div class="col d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3" style="cursor: pointer" data-aos="fade-left" data-bs-toggle="collapse" href="#drops_offcanvas" role="button" aria-expanded="false" aria-controls="drops_offcanvas">
+        <h5 class="m-0 russo">Drops</h5>
+        <ion-icon class="position-absolute end-0 top-50 me-4 fs-4 collapse_icon" name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="collapse" id="drops_offcanvas">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3 mt-4">
+          <div class="servico-img" style="cursor: pointer">
+            <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="">
+          </div>
+          <div class="text-center position-relative d-flex justify-content-center align-items-center flex-column mt-4">
+            <h3 class="russo m-0 servico-detalhe fs-2">Drops</h3>
+            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
+            <div class="d-flex justify-content-center align-items-center mt-4 align-self-lg-end gap-3 fs-5">
+              <a id="info4" class="russo color-redNor versions text-decoration-none" style="cursor: pointer" 
+              preview_1="/img/produto1.jpg"
+              preview_2="/img/drops1_preview1.jpg"
+              preview_3="/img/drops1_preview2.jpg" onclick="changeInfo(this)">V1</a>
+  
+              <a id="info5" class="russo color-cinzaNor versions text-decoration-none" style="cursor: pointer"
+              preview_1="/img/drops2_preview1.jpg"
+              preview_2="/img/drops2_preview2.jpg"
+              preview_3="/img/drops2_preview3.jpg" onclick="changeInfo(this)">V2</a>
+  
+              <a id="info6" class="russo color-cinzaNor versions text-decoration-none" style="cursor: pointer"
+              preview_1="/img/drops3_preview1.jpg"
+              preview_2="/img/drops3_preview2.jpg"
+              preview_3="/img/drops3_preview3.jpg" onclick="changeInfo(this)">V3</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <div id="carrousel" class="carousel slide">
+            <div class="carousel-inner" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img id="preview_c1" src="/img/produto1.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img id="preview_c2" src="/img/drops1_preview1.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img id="preview_c3" src="/img/drops1_preview2.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3" style="cursor: pointer" data-aos="fade-right" data-bs-toggle="collapse" href="#dqpool_offcanvas" role="button" aria-expanded="false" aria-controls="dqpool_offcanvas">
+        <h5 class="m-0 russo">DQPool</h5>
+        <ion-icon class="position-absolute end-0 top-50 me-4 fs-4 collapse_icon" name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="collapse" id="dqpool_offcanvas">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3 mt-4">
+          <div class="servico-img" style="cursor: pointer">
+            <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="">
+          </div>
+          <div class="text-center position-relative d-flex justify-content-center align-items-center flex-column mt-4">
+            <h3 class="russo m-0 servico-detalhe fs-2">DQPool</h3>
+            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
+            <div class="d-flex justify-content-center align-items-center mt-4 align-self-lg-end gap-3 fs-5">
+              <a id="info4" class="russo color-redNor text-decoration-none" style="cursor: pointer">V1</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <div id="carrousel2" class="carousel slide">
+            <div class="carousel-inner" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img src="/img/produto2.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img src="/img/dqpool_preview1.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img src="/img/dqpool_preview2.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col d-flex justify-content-lg-start justify-content-center align-items-center gap-2 p-3" style="cursor: pointer" data-aos="fade-left" data-bs-toggle="collapse" href="#adspot_offcanvas" role="button" aria-expanded="false" aria-controls="adspot_offcanvas">
+        <h5 class="m-0 russo">AdSpot</h5>
+        <ion-icon class="position-absolute end-0 top-50 me-4 fs-4 collapse_icon" name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="collapse" id="adspot_offcanvas">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3 mt-4">
+          <div class="servico-img" style="cursor: pointer">
+            <img src="/img/produto_adspot.png" width="200px" class="z-1 position-relative" alt="">
+          </div>
+          <div class="text-center position-relative d-flex justify-content-center align-items-center flex-column mt-4">
+            <h3 class="russo m-0 servico-detalhe fs-2">AdSpot</h3>
+            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
+            <div class="d-flex justify-content-center align-items-center mt-4 align-self-lg-end gap-3 fs-5">
+              <a id="info4" class="russo color-redNor text-decoration-none" style="cursor: pointer">V1</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <div id="carrousel3" class="carousel slide">
+            <div class="carousel-inner" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img src="/img/produto1.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img src="/img/drops1_preview1.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
+                  <img src="/img/drops1_preview2.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="row mt-5 mb-5" data-aos="fade-up">
-      <div class="col-lg-6 focus justify-content-center align-items-center flex-column gap-5" id="hardware1">
-        <div class="d-flex produto-col jusitfy-content-center align-items-center flex-lg-row flex-column gap-4">
-          <div class="d-none" comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto1.jpg" 
-          preview_2="/img/drops1_preview1.jpg" 
-          preview_3="/img/drops1_preview2.jpg"
-          drops="true"></div>
-          <div class="servico-img" onclick="openPopup(this.previousElementSibling)" style="cursor: pointer">
-            <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="">
-          </div>
-          <div class="text-lg-start text-center d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column">
-            <h3 class="russo m-0 servico-detalhe">Drops</h3>
-            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
-            <a class="color-redNor mt-3 text-decoration-none" style="cursor: pointer" onclick="openPopup(this.parentElement.parentElement.firstElementChild)">Ler mais &RightArrow;</a>
-          </div>
+    <div class="d-lg-flex d-none mt-5 mb-5 justify-content-between align-items-center" id="drops">
+      <div class="col-lg-6 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3" data-aos="fade-right">
+        <div class="servico-img" style="cursor: pointer">
+          <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="">
         </div>
-        <div class="d-flex produto-col jusitfy-content-center align-items-center flex-lg-row flex-column gap-4">
-          <div class="d-none" comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto2.jpg" 
-          preview_2="/img/dqpool_preview1.jpg" 
-          preview_3="/img/dqpool_preview2.jpg"></div>
-          <div class="servico-img" onclick="openPopup(this.previousElementSibling)" style="cursor: pointer">
-            <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="">
-          </div>
-          <div class="text-lg-start text-center d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column">
-            <h3 class="russo m-0 servico-detalhe">DQPool</h3>
-            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
-            <a class="color-redNor mt-3 text-decoration-none" style="cursor: pointer" onclick="openPopup(this.parentElement.parentElement.firstElementChild)">Ler mais &RightArrow;</a>
+        <div class="text-lg-start text-center position-relative d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column mt-4">
+          <h3 class="russo m-0 servico-detalhe fs-2">Drops</h3>
+          <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
+          <div class="d-flex justify-content-center align-items-center mt-4 align-self-lg-end gap-3 fs-5">
+            <a id="info1" class="russo color-redNor versions text-decoration-none" style="cursor: pointer" 
+            preview_1="/img/produto1.jpg"
+            preview_2="/img/drops1_preview1.jpg"
+            preview_3="/img/drops1_preview2.jpg" onclick="changeInfo(this)">V1</a>
+
+            <a id="info2" class="russo color-cinzaNor versions text-decoration-none" style="cursor: pointer"
+            preview_1="/img/drops2_preview1.jpg"
+            preview_2="/img/drops2_preview2.jpg"
+            preview_3="/img/drops2_preview3.jpg" onclick="changeInfo(this)">V2</a>
+
+            <a id="info3" class="russo color-cinzaNor versions text-decoration-none" style="cursor: pointer"
+            preview_1="/img/drops3_preview1.jpg"
+            preview_2="/img/drops3_preview2.jpg"
+            preview_3="/img/drops3_preview3.jpg" onclick="changeInfo(this)">V3</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 unfocus justify-content-center align-items-center flex-column gap-5" id="software1">
-        <div class="d-flex produto-col jusitfy-content-center align-items-center flex-lg-row flex-column gap-4">
-          <div class="d-none" comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto1.jpg" 
-          preview_2="/img/drops1_preview1.jpg" 
-          preview_3="/img/drops1_preview2.jpg"></div>
-          <div class="servico-img" onclick="openPopup(this.previousElementSibling)" style="cursor: pointer">
-            <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="">
+      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3" data-aos="fade-left">
+        <div class="overflow-hidden d-flex justify-content-center align-items-center" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+          <img id="fullImage" src="/img/produto1.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="d-flex flex-column jusitfy-content-start aling-items-start gap-3">
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_1" src="/img/produto1.jpg" onclick="setImage(this)" class="img-fluid" alt="">
           </div>
-          <div class="text-lg-start text-center d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column">
-            <h3 class="russo m-0 servico-detalhe">SOFTWARE</h3>
-            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
-            <a class="color-redNor mt-3 text-decoration-none" style="cursor: pointer" onclick="openPopup(this.parentElement.parentElement.firstElementChild)">Ler mais &RightArrow;</a>
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_2" src="/img/drops1_preview1.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          </div>
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_3" src="/img/drops1_preview2.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
           </div>
         </div>
-        <div class="d-flex produto-col jusitfy-content-center align-items-center flex-lg-row flex-column gap-4">
-          <div class="d-none" comment="Apresentamos a nossa máquina de café, um equipamento moderno e sofisticado que vai transformar a sua experiência com o café. Com um design elegante e compacto, ela se encaixa perfeitamente em qualquer ambiente, desde a cozinha da sua casa até o escritório da sua empresa."
-          title="DROPS"
-          preview_1="/img/produto2.jpg" 
-          preview_2="/img/dqpool_preview1.jpg" 
-          preview_3="/img/dqpool_preview2.jpg"></div>
-          <div class="servico-img" onclick="openPopup(this.previousElementSibling)" style="cursor: pointer">
-            <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="">
+      </div>
+    </div>
+
+    <div class="d-none mt-5 mb-5 justify-content-between align-items-center" id="dqpool">
+      <div class="col-lg-6 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3" data-aos="fade-right">
+        <div class="servico-img" style="cursor: pointer">
+          <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="">
+        </div>
+        <div class="text-lg-start text-center position-relative d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column mt-4">
+          <h3 class="russo m-0 servico-detalhe fs-2">DQPool</h3>
+          <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
+          <div class="d-flex justify-content-center align-items-center mt-4 align-self-lg-end gap-3 fs-5">
+            <a id="info1" class="russo color-redNor text-decoration-none" style="cursor: pointer">V1</a>
           </div>
-          <div class="text-lg-start text-center d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column">
-            <h3 class="russo m-0 servico-detalhe">SOFTWARE</h3>
-            <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
-            <a class="color-redNor mt-3 text-decoration-none" style="cursor: pointer" onclick="openPopup(this.parentElement.parentElement.firstElementChild)">Ler mais &RightArrow;</a>
+        </div>
+      </div>
+      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3" data-aos="fade-left">
+        <div class="overflow-hidden d-flex justify-content-center align-items-center" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+          <img id="fullImage" src="/img/produto2.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="d-flex flex-column jusitfy-content-start aling-items-start gap-3">
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_4" src="/img/produto2.jpg" onclick="setImage(this)" class="img-fluid" alt="">
+          </div>
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_5" src="/img/dqpool_preview1.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          </div>
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_6" src="/img/dqpool_preview2.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none mt-5 mb-5 justify-content-between align-items-center" id="spot">
+      <div class="col-lg-6 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3" data-aos="fade-right">
+        <div class="servico-img" style="cursor: pointer">
+          <img src="/img/produto_adspot.png" width="200px" class="z-1 position-relative" alt="">
+        </div>
+        <div class="text-lg-start text-center position-relative d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column mt-4">
+          <h3 class="russo m-0 servico-detalhe fs-2">Adspot</h3>
+          <p class="color-b1 m-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?</p>
+          <div class="d-flex justify-content-center align-items-center mt-4 align-self-lg-end gap-3 fs-5">
+            <a id="info1" class="russo color-redNor text-decoration-none" style="cursor: pointer">V1</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3" data-aos="fade-left">
+        <div class="overflow-hidden d-flex justify-content-center align-items-center" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+          <img id="fullImage" src="/img/produto1.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="d-flex flex-column jusitfy-content-start aling-items-start gap-3">
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_7" src="/img/produto1.jpg" onclick="setImage(this)" class="img-fluid" alt="">
+          </div>
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_8" src="/img/drops1_preview1.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          </div>
+          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
+            <img id="preview_9" src="/img/drops1_preview2.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -599,7 +591,7 @@
 <div class="bg-b2 position-relative">
   <div class="container py-4">
     <div class="row justify-content-start align-items-center">
-      <div class="col-auto p-0 m-0" data-aos="fade-right">
+      <div class="col-auto mb-0" data-aos="fade-right">
         <h5 class="russo color-w4">marcas <span class="color-redNor">/</span> afiliados</h5>
       </div>
     </div>
@@ -619,26 +611,6 @@
 
 {{-- Contacto --}}
 <section class="bg-w1 position-relative" id="contact">
-  <div class="position-absolute d-lg-block d-none py-4 w-100 start-0 top-50 bg-cinzaNor translate-middle-y mt-5">
-    <div class="container">
-      <h1 class="color-w1 russo" data-aos="fade-right">Quer falar conosco<span class="color-redNor">?</span></h1>
-      <h5 class="roboto color-w1" data-aos="fade-right">Estamos disponíveis! Pode:</h5>
-      <div class="color-w1 roboto ms-4">
-        <div class="mt-4" data-aos="fade-down">
-          <h5 class="fw-bold m-0">Ligar<span class="color-redNor">:</span></h5>
-          <p href="" class="text-decoration-none color-w1 roboto d-flex justify-content-start align-items-center gap-1 fs-6 mt-2"><ion-icon name="phone-portrait-outline"></ion-icon> <a class="text-decoration-none color-w1 roboto" href="tel:+351249119339"> +351 249 119 339</a> | <a class="text-decoration-none color-w1 roboto" href="tel:+351910232674">+351 910 232 674</a></p>
-        </div>
-        <div class="mt-4" data-aos="fade-down">
-          <h5 class="fw-bold m-0">Enviar um email<span class="color-redNor">:</span></h5>
-          <a href="mailto: geral@redfenix.pt" class="text-decoration-none color-w1 roboto d-flex justify-content-start align-items-center gap-1 fs-6 mt-2"><ion-icon name="mail-outline"></ion-icon>geral@redfenix.pt</a>
-        </div>
-        <div class="mt-4" data-aos="fade-down">
-          <h5 class="fw-bold m-0">Visita-nos<span class="color-redNor">:</span></h5>
-          <a href="http://maps.google.com/?q=RedFénix Engenharia, Lda., Alameda Um de Março, Tomar" type="_blank" class="text-decoration-none color-w1 roboto d-flex justify-content-start align-items-center gap-1 fs-6 mt-2"><ion-icon name="location-outline"></ion-icon>Alameda 1 de Março, nº35, 2300-431 | Tomar - Portugal</a>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="container py-5">
     <div class="row justify-content-center align-items-center">
       <div class="col-auto" data-aos="fade-down">
@@ -646,8 +618,8 @@
         <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">contacto</h2>
       </div>
     </div>
-    <div class="row justify-content-end align-items-center mt-5 mb-5" data-aos="fade-left">
-      <div class="col-lg-6 z-1 bg-cinzaNor d-flex justify-content-center align-items-center flex-column p-5" style="border: 3px solid #CC0033; border-radius: 40px 5px 40px 5px;">
+    <div class="row justify-content-end align-items-center mt-5 mb-5">
+      <div class="col-lg-6 z-1 position-relative bg-cinzaNor d-flex justify-content-center align-items-center flex-column p-5" style="border: 3px solid #CC0033; border-radius: 40px 5px 40px 5px;" data-aos="fade-left">
         <h2 class="roboto color-w1 fw-bold justify-self-center align-self-start">Envie-nos uma mensagem<span class="color-redNor">!</span></h2>
         <form class="w-100 d-lg-flex justify-content-center aling-items-center flex-column" action="">
           <div class="d-lg-flex justify-content-between align-items-center">
@@ -664,6 +636,26 @@
           <textarea class="form-control input-contact" name="message" id="message" placeholder="Mensagem" style="height: 144px" required></textarea>
           <button class="bg-redNor color-w1 roboto fw-bold d-block py-2 px-4 m-auto mt-4 rounded-1" style="border: 0" type="submit">ENVIAR</button>
         </form>
+      </div>
+      <div class="position-absolute d-lg-block d-none py-4 w-100 start-0 top-50 bg-cinzaNor translate-middle-y mt-5">
+        <div class="container">
+          <h1 class="color-w1 russo" data-aos="fade-right">Quer falar conosco<span class="color-redNor">?</span></h1>
+          <h5 class="roboto color-w1" data-aos="fade-right">Estamos disponíveis! Pode:</h5>
+          <div class="color-w1 roboto ms-4">
+            <div class="mt-4" data-aos="fade-down">
+              <h5 class="fw-bold m-0">Ligar<span class="color-redNor">:</span></h5>
+              <p class="text-decoration-none color-w1 roboto d-flex justify-content-start align-items-center gap-1 fs-6 mt-2"><ion-icon name="phone-portrait-outline"></ion-icon> <a class="text-decoration-none color-w1 roboto" href="tel:+351249119339"> +351 249 119 339</a> | <a class="text-decoration-none color-w1 roboto" href="tel:+351910232674">+351 910 232 674</a></p>
+            </div>
+            <div class="mt-4" data-aos="fade-down">
+              <h5 class="fw-bold m-0">Enviar um email<span class="color-redNor">:</span></h5>
+              <a href="mailto:geral@redfenix.pt" class="text-decoration-none color-w1 roboto d-flex justify-content-start align-items-center gap-1 fs-6 mt-2"><ion-icon name="mail-outline"></ion-icon>geral@redfenix.pt</a>
+            </div>
+            <div class="mt-4" data-aos="fade-down">
+              <h5 class="fw-bold m-0">Visita-nos<span class="color-redNor">:</span></h5>
+              <a href="http://maps.google.com/?q=RedFénix Engenharia, Lda., Alameda Um de Março, Tomar" type="_blank" class="text-decoration-none color-w1 roboto d-flex justify-content-start align-items-center gap-1 fs-6 mt-2"><ion-icon name="location-outline"></ion-icon>Alameda 1 de Março, nº35, 2300-431 | Tomar - Portugal</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

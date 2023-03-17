@@ -12,114 +12,70 @@ function activeMenu() {
 activeMenu();
 window.addEventListener("scroll", activeMenu);
 
-// POPUP
-var popup = document.getElementById("popup");
-
-function closePopup() {
-    popup.classList.replace("d-flex", "d-none");
-}
-
-function openPopup(info) {
-    popup.classList.replace("d-none", "d-flex");
-    var versions = document.getElementById("versions");
-    var comentario = document.getElementById("comentario");
-    var title = document.getElementById("titulo");
-    var fullImage = document.getElementById("full-image");
-    // var detalhe = document.getElementById("detalhe");
-
-    if (info.getAttribute("drops") == "true") {
-        versions.classList.add("d-lg-block");
-    } else {
-        versions.classList.remove("d-lg-block");
-    }
-
-    for (var i = 0; i < 3; i++) {
-        var preview = document.getElementById("preview_" + [i + 1]);
-        preview.src = info.getAttribute("preview_" + [i + 1]);
-        if (i == 0) {
-            fullImage.src = info.getAttribute("preview_" + [i + 1]);
-        }
-    }
-    comentario.innerHTML = info.getAttribute("comment");
-    title.innerHTML = info.getAttribute("title");
-}
-
-var current_version = document.getElementById("version1");
-
-function changeInfo(info) {
-    var comentario = document.getElementById("comentario");
-    var title = document.getElementById("titulo");
-    var fullImage = document.getElementById("full-image");
-    // var detalhe = document.getElementById("detalhe");
-
-    if (info.id != current_version.id) {
-        info.classList.replace("color-g", "color-w1");
-        current_version.classList.replace("color-w1", "color-g");
-        current_version = info;
-    }
-
-    for (var i = 0; i < 3; i++) {
-        var preview = document.getElementById("preview_" + [i + 1]);
-        preview.src = info.getAttribute("preview_" + [i + 1]);
-        if (i == 0) {
-            fullImage.src = info.getAttribute("preview_" + [i + 1]);
-        }
-    }
-    comentario.innerHTML = info.getAttribute("comment");
-    title.innerHTML = info.getAttribute("title");
-}
+// PRODUTOS
+var fullImage = document.querySelectorAll("#fullImage");
+var currentImage = document.getElementById("preview_1");
+var currentInfo = document.getElementById("info1");
+var currentSelection = document.getElementById("drops_selection");
+var currentArea = document.getElementById("drops");
 
 function setImage(img) {
-    var fullImage = document.getElementById("full-image");
-    fullImage.src = img.src;
+    if (currentSelection.id == "drops_selection") {
+        fullImage[0].src = img.src;
+    } else if (currentSelection.id == "dqpool_selection") {
+        fullImage[1].src = img.src;
+    } else if (currentSelection.id == "adspot_selection") {
+        fullImage[2].src = img.src;
+    }
+    currentImage.parentElement.classList.replace(
+        "img-selected",
+        "img-deselected"
+    );
+    img.parentElement.classList.replace("img-deselected", "img-selected");
+    currentImage = img;
 }
 
-window.addEventListener("click", ({ target }) => {
-    if (target.id == "popup") {
-        closePopup();
+function changeInfo(info) {
+    for (var i = 0; i < 3; i++) {
+        var preview = document.getElementById("preview_" + [i + 1]);
+        var previewC = document.getElementById("preview_c" + [i + 1]);
+        preview.src = info.getAttribute("preview_" + [i + 1]);
+        previewC.src = info.getAttribute("preview_" + [i + 1]);
     }
-});
+    fullImage[0].src = info.getAttribute("preview_1");
+    if (info.id == "info5" || info.id == "info6") {
+        document
+            .getElementById("info4")
+            .classList.replace("color-redNor", "color-cinzaNor");
+    }
+    currentInfo.classList.replace("color-redNor", "color-cinzaNor");
+    info.classList.replace("color-cinzaNor", "color-redNor");
+    currentInfo = info;
+}
 
-// var selectionArea = document.getElementById("selection");
-// var current = document.getElementById("hardware-selection");
+function changeSelection(select) {
+    var drops = document.getElementById("drops");
+    var dqpool = document.getElementById("dqpool");
+    var adspot = document.getElementById("spot");
 
-// function changeSelection(selection) {
-//     var hardware = document.getElementById("hardware");
-//     var software = document.getElementById("software");
+    currentSelection.classList.replace("selected", "unselected");
+    select.classList.replace("unselected", "selected");
+    currentSelection = select;
 
-//     if (selection.id != current.id) {
-//         selection.classList.add("selection-detalhe");
-//         current.classList.remove("selection-detalhe");
-//         current.classList.replace("focus", "unfocus");
-//         current = selection;
-//         if (current.id == "hardware-selection") {
-//             software.classList.replace("d-lg-flex", "d-none");
-//             hardware.classList.replace("d-none", "d-lg-flex");
-//         } else if (current.id == "software-selection") {
-//             hardware.classList.replace("d-lg-flex", "d-none");
-//             software.classList.replace("d-none", "d-lg-flex");
-//         }
-//     }
-// }
-
-// PRODUTOS SELECTION
-var current_selection = document.getElementById("hardware-selection1");
-
-function changeSelection(selection) {
-    var hardware = document.getElementById("hardware1");
-    var software = document.getElementById("software1");
-
-    if (selection.id != current_selection.id) {
-        selection.classList.add("selection-detalhe");
-        current_selection.classList.remove("selection-detalhe");
-        current_selection.classList.replace("focus", "unfocus");
-        current_selection = selection;
-        if (current_selection.id == "hardware-selection1") {
-            software.classList.replace("focus", "unfocus");
-            hardware.classList.replace("unfocus", "focus");
-        } else if (current_selection.id == "software-selection1") {
-            hardware.classList.replace("focus", "unfocus");
-            software.classList.replace("unfocus", "focus");
-        }
+    if (select.id == "drops_selection") {
+        currentArea.classList.replace("d-lg-flex", "d-none");
+        currentImage = document.getElementById("preview_1");
+        drops.classList.replace("d-none", "d-lg-flex");
+        currentArea = drops;
+    } else if (select.id == "dqpool_selection") {
+        currentArea.classList.replace("d-lg-flex", "d-none");
+        currentImage = document.getElementById("preview_4");
+        dqpool.classList.replace("d-none", "d-lg-flex");
+        currentArea = dqpool;
+    } else if (select.id == "adspot_selection") {
+        currentArea.classList.replace("d-lg-flex", "d-none");
+        currentImage = document.getElementById("preview_7");
+        adspot.classList.replace("d-none", "d-lg-flex");
+        currentArea = adspot;
     }
 }
