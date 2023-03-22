@@ -67,7 +67,7 @@
     transition: 0.2s ease all;
 }
 
-.col:hover .servico-detalhe,
+.focus:hover .servico-detalhe,
 .col-lg-6:hover .servico-detalhe {
     color: #cc0033;
     transition: 0.2s ease all;
@@ -80,19 +80,37 @@
 .servico-img::after {
     content: "";
     position: absolute;
-    width: 140px;
-    height: 140px;
+    width: 210px;
+    height: 210px;
     z-index: 0;
-    background-color: #333333;
-    left: 20px;
+    background-color: #1a1a1a;
+    left: 30px;
     border-radius: 15px 0px 15px 0px;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
     transition: 0.2s ease all;
 }
 
-.col:hover .servico-img::after,
-.col-lg-6:hover .servico-img::after {
+.produto-img {
+    position: relative;
+}
+
+.produto-img::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    z-index: 0;
+    background-color: #1a1a1a;
+    left: 15px;
+    border-radius: 15px 0px 15px 0px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 0.2s ease all;
+}
+
+.unfocus:hover .servico-img::after,
+.col-lg-6:hover .produto-img::after {
     background-color: #cc0033;
     transform: translateY(-50%) rotate(45deg) translateX(-5px) translateY(5px);
     transition: 0.2s ease all;
@@ -137,12 +155,16 @@
     .projeto-border-radius {
         border-radius: 0px;
     }
-    .unfocus {
-        display: none !important;
-    }
+}
 
-    .focus {
-        animation: leftAnim 0.3s ease;
+@media screen and (max-width: 1400px) {
+    #rowSettingsService {
+        background-color: #333;
+        background-image: url("../img/servico_detalhe.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
     }
 }
 
@@ -291,4 +313,76 @@
 
 .input-contact::placeholder {
     color: #b2afaf !important;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    height: 55px;
+    width: 55px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #cc0033;
+    font-size: 1.8rem;
+    z-index: 2;
+    animation: apperTopButton 0.6s ease;
+}
+
+.top-button span {
+    background-color: #333;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.2s ease all;
+    color: #fff;
+}
+
+.img-produto-detalhe {
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+    position: absolute;
+    bottom: -60px;
+    animation: float 4s ease-in-out infinite;
+    left: -60px;
+}
+
+.servico-img-detalhe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+    .servico-img-detalhe {
+        display: none;
+    }
+}
+
+.unfocus {
+    transform: scale(0.8);
+    position: relative;
+    transition: 0.3s ease all;
+}
+
+.unfocus p {
+    opacity: 0;
+}
+
+.focus {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s ease all;
+}
+
+.focus .servico-img::after {
+    background-color: #cc0033;
+    transform: translateY(-50%) rotate(45deg) translateX(-5px) translateY(5px);
 }

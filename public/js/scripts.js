@@ -12,6 +12,33 @@ function activeMenu() {
 activeMenu();
 window.addEventListener("scroll", activeMenu);
 
+// Top Button
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressStyle = document.getElementById("progressStyle");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    } else {
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    if (scrollValue == 100) {
+        progressStyle.style.backgroundColor = "#cc0033";
+    } else {
+        progressStyle.style.backgroundColor = "#333";
+    }
+    scrollProgress.style.background = `conic-gradient(#cc0033 ${scrollValue}%, #333333 ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
 // PRODUTOS
 var fullImage = document.querySelectorAll("#fullImage");
 var currentImage = document.getElementById("preview_1");
@@ -64,18 +91,54 @@ function changeSelection(select) {
 
     if (select.id == "drops_selection") {
         currentArea.classList.replace("d-lg-flex", "d-none");
-        currentImage = document.getElementById("preview_1");
+
         drops.classList.replace("d-none", "d-lg-flex");
         currentArea = drops;
+
+        currentImage.parentElement.classList.replace(
+            "img-selected",
+            "img-deselected"
+        );
+        currentImage = document.getElementById("preview_1");
     } else if (select.id == "dqpool_selection") {
         currentArea.classList.replace("d-lg-flex", "d-none");
-        currentImage = document.getElementById("preview_4");
         dqpool.classList.replace("d-none", "d-lg-flex");
         currentArea = dqpool;
+
+        currentImage.parentElement.classList.replace(
+            "img-selected",
+            "img-deselected"
+        );
+        currentImage = document.getElementById("preview_4");
     } else if (select.id == "adspot_selection") {
         currentArea.classList.replace("d-lg-flex", "d-none");
-        currentImage = document.getElementById("preview_7");
         adspot.classList.replace("d-none", "d-lg-flex");
         currentArea = adspot;
+
+        currentImage.parentElement.classList.replace(
+            "img-selected",
+            "img-deselected"
+        );
+        currentImage = document.getElementById("preview_7");
     }
+}
+var currentService;
+if (document.documentElement.offsetWidth < 700) {
+    var serviceClass = document.querySelectorAll(".unfocus");
+    var rowSettingsService = document.getElementById("rowSettingsService");
+    for (i = 0; i < serviceClass.length; i++) {
+        serviceClass[i].classList.replace("unfocus", "focus");
+        serviceClass[i].style.cursor = "";
+    }
+    rowSettingsService.style.gap = "30px";
+}
+
+function setService(service) {
+    console.log(document.documentElement.offsetWidth);
+    service.classList.replace("unfocus", "focus");
+    if (currentService && currentService != service) {
+        currentService.classList.replace("focus", "unfocus");
+    }
+    currentService = service;
+    console.log(currentService);
 }

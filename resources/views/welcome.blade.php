@@ -7,27 +7,27 @@
   <div id="autoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner position-relative">
       <div class="carousel-item active">
-        <img src="/img/carrosel1.png" class="d-block h-100" alt="">
+        <img src="/img/carrosel1.png" class="d-block h-100" alt="carrousel 1 imagem">
         <div class="carousel-caption d-none d-md-block">
           <p class="roboto color-w3 m-0 fs-5" data-aos="fade-right">Hardware & Software</p>
-          <h1 class="display-5 russo color-w1 mt-1 intro" data-aos="fade-left">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
+          <h1 class="russo color-w1 mt-1 intro" data-aos="fade-left">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
         </div>
         {{-- MOBILE --}}
         <div class="z-2 d-md-none d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
           <p class="roboto color-w3 m-0 fs-5 text-center" data-aos="fade-right">Hardware & Software</p>
-          <h1 class="display-5 russo color-w1 mt-1 text-center intro" data-aos="fade-left">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
+          <h1 class="russo color-w1 mt-1 text-center intro" data-aos="fade-left">DESENVOLVIMENTO E ASSISTÊNCIA<span class="color-redNor">.</span></h5>
         </div>  
       </div>
       <div class="carousel-item">
-        <img src="/img/carrosel2.png" class="d-block h-100" alt="">
+        <img src="/img/carrosel2.png" class="d-block h-100" alt="carrousel 2 imagem">
         <div class="carousel-caption d-none d-md-block">
           <p class="roboto color-w3 m-0 fs-5" data-aos="fade-right">Serviço & Manutenção</p>
-          <h1 class="display-5 russo color-w1 mt-1" data-aos="fade-left">SISTEMAS OPERATIVOS E TELEMÓVEIS<span class="color-redNor">.</span></h5>
+          <h1 class="russo color-w1 mt-1" data-aos="fade-left">SISTEMAS OPERATIVOS E TELEMÓVEIS<span class="color-redNor">.</span></h5>
         </div>
         {{-- MOBILE --}}
         <div class="z-2 d-md-none d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle w-75">
           <p class="roboto color-w3 m-0 fs-5 text-center" data-aos="fade-right">Serviço & Manutenção</p>
-          <h1 class="display-5 russo color-w1 mt-1 text-center" data-aos="fade-left">SISTEMAS OPERATIVOS E TELEMÓVEIS<span class="color-redNor">.</span></h5>
+          <h1 class="russo color-w1 mt-1 text-center" data-aos="fade-left">SISTEMAS OPERATIVOS E TELEMÓVEIS<span class="color-redNor">.</span></h5>
         </div>    
       </div>
       <button class="position-absolute top-0 bottom-0 z-2 bg-transparent border-0 opacity-25 text-center p-0 d-md-flex d-none align-items-center justify-content-center" style="width: 5%" type="button" data-bs-target="#autoplaying" data-bs-slide="prev">
@@ -43,94 +43,126 @@
   </div>
 </div>
 
-{{-- Serviços --}}
-<section class="bg-w1" id="service">
-  <div class="container py-5">
+{{-- Serviços v1--}}
+{{-- <section class="bg-w2" id="service">
+  <div class="container py-5 position-relative">
     <div class="d-flex justify-content-center align-items-center mt-5">
       <div class="col-auto" data-aos="fade-down">
         <h6 class="roboto text-center m-0 mb-1 color-redNor">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">serviços</h2>
+        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">serviços<span class="color-redNor">.</span></h2>
       </div>
     </div>
-    <div class="d-lg-flex justify-content-center align-items-center gap-5 mt-5 pt-1">
-      <div class="col justify-content-center align-items-center d-flex flex-lg-row flex-column gap-4" data-aos="fade-right">
-        <div class="img-fluid servico-img">
-          <img class="position-relative z-1" src="/img/servico1.png" alt="" width="200px">
+    <div class="position-relative bg-w1 px-4 py-5 my-5" style="border-radius: 10px" data-aos="fade-right">
+      <div class="servico-img-detalhe"><img src="/img/servico_detalhe.svg" width="300" height="300" alt="detalhe serviço"></div>
+      <div class="d-lg-flex justify-content-center align-items-center gap-5">
+        <div class="col justify-content-center align-items-center d-flex flex-lg-row flex-column gap-4" data-aos="fade-right">
+          <div class="img-fluid servico-img">
+            <img class="position-relative z-1" src="/img/servico1.png" alt="serviço 1" width="200px">
+          </div>
+          <div class="z-1">
+            <h4 class="russo servico-detalhe text-lg-start text-center" >Criação de Hardware e Software</h4>
+            <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+          </div>
         </div>
-        <div class="z-1">
-          <h4 class="russo servico-detalhe text-lg-start text-center" >Criação de Hardware e Software</h4>
-          <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        <div class="col justify-content-center align-items-center d-flex flex-lg-row flex-column gap-4 mt-4" data-aos="fade-right">
+          <div class="img-fluid servico-img">
+            <img class="position-relative z-1" src="/img/servico2.png" alt="serviço 2" width="200px">
+          </div>
+          <div class="z-1">
+            <h4 class="russo servico-detalhe text-lg-start text-center">Assistência Técnica Eletrónica</h4>
+            <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+          </div>
         </div>
       </div>
-      <div class="col justify-content-center align-items-center d-flex flex-lg-row flex-column gap-4 mt-4" data-aos="fade-right">
-        <div class="img-fluid servico-img">
-          <img class="position-relative z-1" src="/img/servico2.png" alt="" width="200px">
+      <div class="d-lg-flex justify-content-center align-items-center gap-5">
+        <div class="col justify-content-center align-items-center d-flex flex-lg-row flex-column gap-4 mt-4" data-aos="fade-right">
+          <div class="img-fluid servico-img">
+            <img class="position-relative z-1" src="/img/servico3.png" alt="serviço 3" width="200px">
+          </div>
+          <div class="z-1">
+            <h4 class="russo servico-detalhe text-lg-start text-center">Manutenção Eletrónica Industrial</h4>
+            <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+          </div>
         </div>
-        <div class="z-1">
-          <h4 class="russo servico-detalhe text-lg-start text-center">Assistência Técnica Eletrónica</h4>
-          <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        <div class="col justify-content-center align-items-center mt-4 d-flex flex-lg-row flex-column gap-4" data-aos="fade-right">
+          <div class="img-fluid servico-img">
+            <img class="position-relative z-1" src="/img/servico4.png" alt="serviço 4" width="200px">
+          </div>
+          <div class="z-1">
+            <h4 class="russo servico-detalhe text-lg-start text-center">Comercialização de Componentes</h4>
+            <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="d-lg-flex justify-content-center align-items-center gap-5 mb-5 pt-1">
-      <div class="col justify-content-center align-items-center d-flex flex-lg-row flex-column gap-4 mt-4" data-aos="fade-right">
-        <div class="img-fluid servico-img">
-          <img class="position-relative z-1" src="/img/servico3.png" alt="" width="200px">
+  </div>
+</section> --}}
+
+{{-- Serviços v2--}}
+<section class="bg-w2 position-relative" id="service">
+  <div class="container-fluid py-5">
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="col-auto" data-aos="fade-down">
+        <h6 class="roboto text-center m-0 mb-1 color-redNor">Informação Breve</h6>
+        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">serviços<span class="color-redNor">.</span></h2>
+      </div>
+    </div>
+
+    <div class="row flex-wrap mt-5 z-1 p-4 overflow-hidden"  id="rowSettingsService">
+      <div class="position-absolute d-xxl-block d-none py-4 w-100 h-50 start-0 top-50 bg-cinzaNor translate-middle-y overflow-hidden" style="margin-top: 120px">
+        <img src="/img/servico_detalhe.svg" class="servico-img-detalhe w-100" alt="">
+      </div>
+      <div class="col d-flex jusitfy-content-center align-items-center gap-2 flex-column unfocus" onclick="setService(this)" style="cursor: pointer"> 
+        <div class="img-fluid servico-img" data-aos="fade-up">
+          <img class="position-relative z-1" src="/img/servico1.png" alt="serviço 1" width="300px">
         </div>
-        <div class="z-1">
-          <h4 class="russo servico-detalhe text-lg-start text-center">Manutenção Eletrónica Industrial</h4>
-          <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        <div data-aos="fade-up">
+          <h4 class="russo servico-detalhe text-center mt-4 color-w1" >Criação de Hardware e Software</h4>
+          <p class="roboto text-center color-w1">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
         </div>
       </div>
-      <div class="col justify-content-center align-items-center mt-4 d-flex flex-lg-row flex-column gap-4" data-aos="fade-right">
-        <div class="img-fluid servico-img">
-          <img class="position-relative z-1" src="/img/servico4.png" alt="" width="200px">
+      <div class="col d-flex jusitfy-content-center align-items-center gap-2 flex-column unfocus" onclick="setService(this)" style="cursor: pointer"> 
+        <div class="img-fluid servico-img" data-aos="fade-up">
+          <img class="position-relative z-1" src="/img/servico2.png" alt="serviço 1" width="300px">
         </div>
-        <div class="z-1">
-          <h4 class="russo servico-detalhe text-lg-start text-center">Comercialização de Componentes</h4>
-          <p class="roboto text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        <div data-aos="fade-up">
+          <h4 class="russo servico-detalhe text-center mt-4 color-w1" >Assistência Técnica Eletrónica</h4>
+          <p class="roboto text-center color-w1">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+      </div>
+      <div class="col d-flex jusitfy-content-center align-items-center gap-2 flex-column unfocus" onclick="setService(this)" style="cursor: pointer"> 
+        <div class="img-fluid servico-img" data-aos="fade-up">
+          <img class="position-relative z-1" src="/img/servico3.png" alt="serviço 1" width="300px">
+        </div>
+        <div data-aos="fade-up">
+          <h4 class="russo servico-detalhe text-center mt-4 color-w1" >Manutenção Eletrónica Industrial</h4>
+          <p class="roboto text-center color-w1">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+      </div>
+      <div class="col d-flex jusitfy-content-center align-items-center gap-2 flex-column unfocus" onclick="setService(this)" style="cursor: pointer"> 
+        <div class="img-fluid servico-img" data-aos="fade-up">
+          <img class="position-relative z-1" src="/img/servico4.png" alt="serviço 1" width="300px">
+        </div>
+        <div data-aos="fade-up">
+          <h4 class="russo servico-detalhe text-center mt-4 color-w1" >Comercialização de Componentes</h4>
+          <p class="roboto text-center color-w1">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-{{-- Aptidões --}}
-<div class="bg-w2">
-  <div class="container py-5">
-    <div class="row justify-content-center align-items-center mt-5">
-      <div class="col-auto" data-aos="fade-down">
-        <h6 class="roboto text-center m-0 mb-1 color-redNor">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">aptidões</h2>
-      </div>
-    </div>
-    <div class="d-lg-flex mt-5 mb-5">
-      <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3" data-aos="fade-up">
-        <ion-icon class="fs-1 color-redNor" name="globe-outline"></ion-icon>
-        <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Web Development</h4>
-        <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-      </div>
-      <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3" data-aos="fade-up">
-        <ion-icon class="fs-1 color-redNor" name="construct-outline"></ion-icon>
-        <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Robótica & Hardware</h4>
-        <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-      </div>
-      <div class="col d-flex justify-content-center align-items-center flex-column bg-w1 p-5 borda-w3" data-aos="fade-up">
-        <ion-icon class="fs-1 color-redNor" name="construct-outline"></ion-icon>
-        <h4 class="fw-bold roboto color-cinzaNor mt-2 text-center">Robótica & Hardware</h4>
-        <p class="roboto text-center color-cinzaNor" style="font-size: .875rem;">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 {{-- Projetos --}}
-<div class="bg-w1">
+<div class="bg-w1 position-relative">
+  <div class="position-absolute top-50 translate-middle-y start-0 bg-cinzaNor w-100 h-50 d-lg-block d-none overflow-hidden" style="margin-top: 70px;"> 
+    <img src="/img/servico_detalhe.svg" class="servico-img-detalhe w-100" alt="">
+  </div>
   <div class="container-lg container-fluid py-lg-5 p-0 overflow-hidden">
     <div class="row justify-content-center align-items-center mt-5">
       <div class="col-auto" data-aos="fade-down">
         <h6 class="roboto text-center m-0 mb-1 color-redNor text-center">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor text-center" style="letter-spacing: 0.05em;">projetos</h2>
+        <h2 class="russo text-center display-5 color-cinzaNor text-center" style="letter-spacing: 0.05em;">projetos<span class="color-redNor">.</span></h2>
       </div>
     </div>
     {{-- PC --}}
@@ -138,27 +170,27 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex justify-content-center gap-5">
-            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius shadow" style="border: 4px solid #CC0033">
               <div class="banner-detalhe"></div>
-              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="projeto 1">
               <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
                 <h4 class="fw-bold roboto fs-3 info-detalhe">Robôs em <br> Arduino</h4>
                 <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
               </div>
             </div>
 
-            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius shadow" style="border: 4px solid #CC0033">
               <div class="banner-detalhe"></div>
-              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="projeto 2">
               <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
                 <h4 class="fw-bold roboto fs-3 info-detalhe">Leitores de <br> Cartão</h4>
                 <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
               </div>
             </div>
 
-            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius shadow" style="border: 4px solid #CC0033">
               <div class="banner-detalhe"></div>
-              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="projeto 3">
               <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
                 <h4 class="fw-bold roboto fs-3 info-detalhe">Próteses <br> Mecânicas</h4>
                 <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -169,25 +201,25 @@
 
         <div class="carousel-item">
           <div class="d-flex justify-content-center gap-5">
-            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius shadow" style="border: 4px solid #CC0033">
               <div class="banner-detalhe"></div>
-              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="projeto 1">
               <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
                 <h4 class="fw-bold roboto fs-3 info-detalhe">Robôs em <br> Arduino</h4>
                 <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
               </div>
             </div>
-            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius shadow" style="border: 4px solid #CC0033">
               <div class="banner-detalhe"></div>
-              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="projeto 2">
               <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
                 <h4 class="fw-bold roboto fs-3 info-detalhe">Leitores de <br> Cartão</h4>
                 <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
               </div>
             </div>
-            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius">
+            <div class="col-auto d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius shadow" style="border: 4px solid #CC0033">
               <div class="banner-detalhe"></div>
-              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+              <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="projeto 3">
               <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
                 <h4 class="fw-bold roboto fs-3 info-detalhe">Próteses <br> Mecânicas</h4>
                 <p class="roboto" style="font-size: .75rem">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -209,9 +241,9 @@
     <div id="projetosCarrouselMobile" class="d-lg-none d-block carousel slide mt-2 mb-lg-5" data-aos="fade-up">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px;">
             <div class="banner-detalhe"></div>
-            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="projeto 1">
             <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
               <h4 class="fw-bold roboto display-4 info-detalhe ">Robôs em <br> Arduino</h4>
               <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -219,9 +251,9 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px;">
             <div class="banner-detalhe"></div>
-            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="projeto 2">
             <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
               <h4 class="fw-bold roboto display-4 info-detalhe">Leitores de <br> Cartão</h4>
               <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -229,9 +261,9 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px;">
             <div class="banner-detalhe"></div>
-            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="projeto 3">
             <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
               <h4 class="fw-bold roboto display-4 info-detalhe">Próteses <br> Mecânicas</h4>
               <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -239,9 +271,9 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px;">
             <div class="banner-detalhe"></div>
-            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="">
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer;" src="/img/projeto1.png" alt="projeto 1">
             <div class="position-absolute z-2 color-w1 text-end end-0 bottom-0 p-3">
               <h4 class="fw-bold roboto display-4 info-detalhe ">Robôs em <br> Arduino</h4>
               <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -249,9 +281,9 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
+          <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px;">
             <div class="banner-detalhe"></div>
-            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="">
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto2.png" alt="projeto 2">
             <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
               <h4 class="fw-bold roboto display-4 info-detalhe">Leitores de <br> Cartão</h4>
               <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -261,7 +293,7 @@
         <div class="carousel-item">
           <div class="col d-flex justify-content-center align-items-center position-relative p-0 overflow-hidden projeto-border-radius" style="height: 450px">
             <div class="banner-detalhe"></div>
-            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="">
+            <img class="img-fluid w-100 z-1 opacity-50" style="cursor: pointer" src="/img/projeto3.png" alt="projeto 3">
             <div class="position-absolute color-w1 z-2 text-end end-0 bottom-0 p-3">
               <h4 class="fw-bold roboto display-4 info-detalhe">Próteses <br> Mecânicas</h4>
               <p class="roboto">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
@@ -281,12 +313,12 @@
 </div>
 
 {{-- Produtos --}}
-<section class="bg-w2" id="products">
+<section class="bg-w2 position-relative" id="products">
   <div class="container py-5">
     <div class="row justify-content-center align-items-center mt-5">
       <div class="col-auto" data-aos="fade-down">
         <h6 class="roboto text-center m-0 mb-1 color-redNor">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">produtos</h2>
+        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">produtos<span class="color-redNor">.</span></h2>
       </div>
     </div>
 
@@ -309,8 +341,8 @@
       </div>
       <div class="collapse" id="drops_offcanvas">
         <div class="d-flex flex-column justify-content-center align-items-center gap-3 mt-4">
-          <div class="servico-img" style="cursor: pointer">
-            <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="">
+          <div class="produto-img">
+            <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="produto Drops">
           </div>
           <div class="text-center position-relative d-flex justify-content-center align-items-center flex-column mt-4">
             <h3 class="russo m-0 servico-detalhe fs-2">Drops</h3>
@@ -334,21 +366,22 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center my-4">
-          <div id="carrousel" class="carousel slide">
+          <div id="carrousel" class="carousel slide position-relative">
+          <img src="/img/dots.svg" class="img-produto-detalhe" alt="produto detalhe">
             <div class="carousel-inner" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
               <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img id="preview_c1" src="/img/produto1.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img id="preview_c1" src="/img/produto1.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 1">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img id="preview_c2" src="/img/drops1_preview1.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img id="preview_c2" src="/img/drops1_preview1.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 2">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img id="preview_c3" src="/img/drops1_preview2.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img id="preview_c3" src="/img/drops1_preview2.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 3">
                 </div>
               </div>
             </div>
@@ -368,8 +401,8 @@
       </div>
       <div class="collapse" id="dqpool_offcanvas">
         <div class="d-flex flex-column justify-content-center align-items-center gap-3 mt-4">
-          <div class="servico-img" style="cursor: pointer">
-            <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="">
+          <div class="produto-img">
+            <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="produto DQPool">
           </div>
           <div class="text-center position-relative d-flex justify-content-center align-items-center flex-column mt-4">
             <h3 class="russo m-0 servico-detalhe fs-2">DQPool</h3>
@@ -380,21 +413,22 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center my-4">
-          <div id="carrousel2" class="carousel slide">
+          <div id="carrousel2" class="carousel slide position-relative">
+            <img src="/img/dots.svg" class="img-produto-detalhe" alt="produto detalhe">
             <div class="carousel-inner" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
               <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img src="/img/produto2.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img src="/img/produto2.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 1">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img src="/img/dqpool_preview1.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img src="/img/dqpool_preview1.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 2">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img src="/img/dqpool_preview2.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img src="/img/dqpool_preview2.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 3">
                 </div>
               </div>
             </div>
@@ -414,8 +448,8 @@
       </div>
       <div class="collapse" id="adspot_offcanvas">
         <div class="d-flex flex-column justify-content-center align-items-center gap-3 mt-4">
-          <div class="servico-img" style="cursor: pointer">
-            <img src="/img/produto_adspot.png" width="200px" class="z-1 position-relative" alt="">
+          <div class="produto-img">
+            <img src="/img/produto_adspot.png" width="200px" class="z-1 position-relative" alt="produto AdSpot">
           </div>
           <div class="text-center position-relative d-flex justify-content-center align-items-center flex-column mt-4">
             <h3 class="russo m-0 servico-detalhe fs-2">AdSpot</h3>
@@ -426,21 +460,22 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center my-4">
-          <div id="carrousel3" class="carousel slide">
+          <div id="carrousel3" class="carousel slide position-relative">
+            <img src="/img/dots.svg" class="img-produto-detalhe" alt="produto detalhe">
             <div class="carousel-inner" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
               <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img src="/img/produto1.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img src="/img/produto3.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 1">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img src="/img/drops1_preview1.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img src="/img/spot_preview1.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 2">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height: 400px; width:300px; border-radius: 20px 5px 20px 5px">
-                  <img src="/img/drops1_preview2.jpg" class="img-fluid" alt="">
+                <div class="overflow-hidden position-relative d-flex justify-content-center align-items-center" style="height: 400px; width:300px;">
+                  <img src="/img/spot_preview2.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto 3">
                 </div>
               </div>
             </div>
@@ -457,8 +492,8 @@
     
     <div class="d-lg-flex d-none mt-5 mb-5 justify-content-between align-items-center" id="drops">
       <div class="col-lg-6 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3" data-aos="fade-right">
-        <div class="servico-img" style="cursor: pointer">
-          <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="">
+        <div class="produto-img position-relative">
+          <img src="/img/produto_drops.png" width="200px" class="z-1 position-relative" alt="produto Drops">
         </div>
         <div class="text-lg-start text-center position-relative d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column mt-4">
           <h3 class="russo m-0 servico-detalhe fs-2">Drops</h3>
@@ -481,19 +516,20 @@
           </div>
         </div>
       </div>
-      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3" data-aos="fade-left">
-        <div class="overflow-hidden d-flex justify-content-center align-items-center" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
-          <img id="fullImage" src="/img/produto1.jpg" class="img-fluid" alt="">
+      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3 position-relative" data-aos="fade-left">
+        <img src="/img/dots.svg" class="img-produto-detalhe" alt="produto detalhe">
+        <div class="overflow-hidden position-relative z-1" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+          <img id="fullImage" src="/img/produto1.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto destacado">
         </div>
         <div class="d-flex flex-column jusitfy-content-start aling-items-start gap-3">
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_1" src="/img/produto1.jpg" onclick="setImage(this)" class="img-fluid" alt="">
+          <div class="overflow-hidden z-1 img-selected d-flex justify-content-center align-items-center" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_1" src="/img/produto1.jpg" onclick="setImage(this)" class="img-fluid" alt="produto 1">
           </div>
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_2" src="/img/drops1_preview1.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          <div class="overflow-hidden z-1 img-deselected d-flex justify-content-center align-items-center" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_2" src="/img/drops1_preview1.jpg" onclick="setImage(this)" class="img-fluid" alt="produto 2">
           </div>
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_3" src="/img/drops1_preview2.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          <div class="overflow-hidden z-1 img-deselected d-flex justify-content-center align-items-center" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_3" src="/img/drops1_preview2.jpg" onclick="setImage(this)" class="img-fluid" alt="produto 3">
           </div>
         </div>
       </div>
@@ -501,8 +537,8 @@
 
     <div class="d-none mt-5 mb-5 justify-content-between align-items-center" id="dqpool">
       <div class="col-lg-6 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3" data-aos="fade-right">
-        <div class="servico-img" style="cursor: pointer">
-          <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="">
+        <div class="produto-img">
+          <img src="/img/produto_dqpool.png" width="200px" class="z-1 position-relative" alt="produto DQPool">
         </div>
         <div class="text-lg-start text-center position-relative d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column mt-4">
           <h3 class="russo m-0 servico-detalhe fs-2">DQPool</h3>
@@ -512,19 +548,20 @@
           </div>
         </div>
       </div>
-      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3" data-aos="fade-left">
-        <div class="overflow-hidden d-flex justify-content-center align-items-center" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
-          <img id="fullImage" src="/img/produto2.jpg" class="img-fluid" alt="">
+      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3 position-relative" data-aos="fade-left">
+        <img src="/img/dots.svg" class="img-produto-detalhe" alt="produto detalhe">
+        <div class="overflow-hidden position-relative z-1" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+          <img id="fullImage" src="/img/produto2.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto destacado">
         </div>
         <div class="d-flex flex-column jusitfy-content-start aling-items-start gap-3">
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_4" src="/img/produto2.jpg" onclick="setImage(this)" class="img-fluid" alt="">
+          <div class="overflow-hidden z-1 img-selected d-flex justify-content-center align-items-center" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_4" src="/img/produto2.jpg" onclick="setImage(this)" class="img-fluid" alt="produto 1">
           </div>
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_5" src="/img/dqpool_preview1.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          <div class="overflow-hidden z-1 img-deselected d-flex justify-content-center align-items-center" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_5" src="/img/dqpool_preview1.jpg" onclick="setImage(this)" class="img-fluid" alt="produto 1">
           </div>
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_6" src="/img/dqpool_preview2.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          <div class="overflow-hidden z-1 img-deselected d-flex justify-content-center align-items-center" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_6" src="/img/dqpool_preview2.jpg" onclick="setImage(this)" class="img-fluid" alt="produto 1">
           </div>
         </div>
       </div>
@@ -532,8 +569,8 @@
 
     <div class="d-none mt-5 mb-5 justify-content-between align-items-center" id="spot">
       <div class="col-lg-6 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3" data-aos="fade-right">
-        <div class="servico-img" style="cursor: pointer">
-          <img src="/img/produto_adspot.png" width="200px" class="z-1 position-relative" alt="">
+        <div class="produto-img">
+          <img src="/img/produto_adspot.png" width="200px" class="z-1 position-relative" alt="produto AdSpot">
         </div>
         <div class="text-lg-start text-center position-relative d-flex justify-content-lg-end justify-content-center align-items-lg-start align-items-center flex-column mt-4">
           <h3 class="russo m-0 servico-detalhe fs-2">Adspot</h3>
@@ -543,19 +580,20 @@
           </div>
         </div>
       </div>
-      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3" data-aos="fade-left">
-        <div class="overflow-hidden d-flex justify-content-center align-items-center" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
-          <img id="fullImage" src="/img/produto1.jpg" class="img-fluid" alt="">
+      <div class="col-auto d-lg-flex d-none justify-content-center align-items-start h-100 gap-3 position-relative" data-aos="fade-left">
+        <img src="/img/dots.svg" class="img-produto-detalhe" alt="produto detalhe">
+        <div class="overflow-hidden position-relative z-1" style="width: 300px; height: 420px; border-radius: 20px 5px 20px 5px; border: 4px solid #CC0033">
+          <img id="fullImage" src="/img/produto3.jpg" class="position-absolute top-50 start-50 translate-middle" alt="produto destacado">
         </div>
         <div class="d-flex flex-column jusitfy-content-start aling-items-start gap-3">
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_7" src="/img/produto1.jpg" onclick="setImage(this)" class="img-fluid" alt="">
+          <div class="overflow-hidden position-relative z-1 img-selected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_7" src="/img/produto3.jpg" onclick="setImage(this)" class="position-absolute top-50 start-50 translate-middle" alt="produto 1">
           </div>
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_8" src="/img/drops1_preview1.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          <div class="overflow-hidden position-relative z-1 img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_8" src="/img/spot_preview1.jpg" onclick="setImage(this)" class="position-absolute top-50 start-50 translate-middle" alt="produto 2">
           </div>
-          <div class="d-flex justify-content-center align-items-center overflow-hidden img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer">
-            <img id="preview_9" src="/img/drops1_preview2.jpg" onclick="setImage(this)"  class="img-fluid" alt="">
+          <div class="overflow-hidden position-relative z-1 img-deselected" style="width: 100px; height: 120px; border-radius: 20px 5px 20px 5px; cursor:pointer;">
+            <img id="preview_9" src="/img/spot_preview2.jpg" onclick="setImage(this)" class="position-absolute top-50 start-50 translate-middle" alt="produto 3">
           </div>
         </div>
       </div>
@@ -580,34 +618,12 @@
         </div>
       </div>
       <div class="col-lg-6 d-flex mt-5 flex-column justify-content-lg-end justify-content-center align-items-center position-relative" data-aos="fade-left">
-        <img class="video-detalhe img-fluid" src="/img/video-detalhe.svg" alt="">
+        <img class="video-detalhe img-fluid" src="/img/video-detalhe.svg" alt="Apresentação Logo Norlogic">
         <video src="/img/video_norlogic.mp4" class="img-fluid position-relative" muted style="border-radius: 20px 20px 0px 20px; border: 4px solid #CC0033" autoplay loop></video>
       </div>
     </div>
   </div>
 </section>
-
-{{-- Parceiros --}}
-<div class="bg-b2 position-relative">
-  <div class="container py-4">
-    <div class="row justify-content-start align-items-center">
-      <div class="col-auto mb-0" data-aos="fade-right">
-        <h5 class="russo color-w4">marcas <span class="color-redNor">/</span> afiliados</h5>
-      </div>
-    </div>
-    <div class="d-sm-flex justify-content-center align-items-center gap-5 my-lg-0 my-4">
-     <div class="col-auto d-flex justify-content-center align-items-center" data-aos="fade-up">
-      <img src="/img/logo_adspot.png" width="150px" alt="">
-     </div>
-     <div class="col-auto d-flex justify-content-center align-items-center mt-2" data-aos="fade-up">
-      <img src="/img/logo_becurious.svg" width="150px" alt="">
-     </div>
-     <div class="col-auto d-flex justify-content-center align-items-center mt-2" data-aos="fade-up">
-      <img src="/img/logo_redfenix.png" width="150px" alt="">
-     </div>
-    </div>
-  </div>
-</div>
 
 {{-- Contacto --}}
 <section class="bg-w1 position-relative" id="contact">
@@ -615,7 +631,7 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-auto" data-aos="fade-down">
         <h6 class="roboto text-center m-0 mb-1 color-redNor">Informação Breve</h6>
-        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">contacto</h2>
+        <h2 class="russo text-center display-5 color-cinzaNor" style="letter-spacing: 0.05em;">contacto<span class="color-redNor">.</span></h2>
       </div>
     </div>
     <div class="row justify-content-end align-items-center mt-5 mb-5">
@@ -637,7 +653,8 @@
           <button class="bg-redNor color-w1 roboto fw-bold d-block py-2 px-4 m-auto mt-4 rounded-1" style="border: 0" type="submit">ENVIAR</button>
         </form>
       </div>
-      <div class="position-absolute d-lg-block d-none py-4 w-100 start-0 top-50 bg-cinzaNor translate-middle-y mt-5">
+      <div class="position-absolute d-lg-block d-none py-4 w-100 start-0 top-50 bg-cinzaNor translate-middle-y mt-5 overflow-hidden">
+        <img src="/img/servico_detalhe.svg" class="servico-img-detalhe w-100" alt="">
         <div class="container">
           <h1 class="color-w1 russo" data-aos="fade-right">Quer falar conosco<span class="color-redNor">?</span></h1>
           <h5 class="roboto color-w1" data-aos="fade-right">Estamos disponíveis! Pode:</h5>

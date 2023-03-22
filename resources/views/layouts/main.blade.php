@@ -46,14 +46,19 @@
     <body>
       {{-- HEADER --}}
       <header class="position-fixed top-0 w-100 z-3 roboto" style="border-bottom: 5px solid #CC0033">
-        <nav class="navbar navbar-expand-lg bg-cinzaNor py-2">
-          <div class="container position-relative">
-            <a href="#home" class="d-lg-none d-inline-block"><img src="/img/logo_norlogic.png" width="200" alt="Logo StrikeTatto"></a>
-            <a href="#" class="text-decoration-none text-light fs-4 p-2 d-lg-none d-block" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><ion-icon class="menu-icon p-2" name="grid-outline"></ion-icon></a>
+        <nav class="navbar navbar-expand-lg bg-cinzaNor py-2 position-relative">
+          <div class="container position-relative d-flex jusitfy-content-between align-items-center">
+            <a href="#home" class="d-lg-none d-inline-block"><img src="/img/logo_norlogic.png" width="180" alt="Logo Norlogic"></a>
+            <div class="d-lg-none d-flex justify-content-center align-items-center gap-3">
+              <a href="" class="text-decoration-none fs-5">🇵🇹</a>
+              <a href="" class="text-decoration-none fs-5">🇬🇧</a>
+              <a href="#" class="text-decoration-none text-light fs-4 d-flex jusitfy-content-center align-items-center" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><ion-icon class="menu-icon p-2" name="grid-outline"></ion-icon></a>
+            </div>
+
             <div class="collapse navbar-collapse justify-content-center me-auto" id="navbarNav">
               <ul class="navbar-nav d-flex justify-content-center align-items-center">
                 <li class="nav-item d-lg-inline-block d-none">
-                  <a href="#home" class="text-decoration-none"><img src="/img/logo_norlogic.png" alt="Logo StrikeTatto"></a>
+                  <a href="#home" class="text-decoration-none"><img src="/img/logo_norlogic.png" width="230" alt="Logo Norlogic"></a>
                 </li>
               </ul>
               <div class="d-lg-none d-block mt-4 mb-3">
@@ -106,25 +111,52 @@
                 </li>
               </ul>
             </div>
-            <div class="position-absolute collapse navbar-collapse end-0 top-0">
-              <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3">
-                <li class="nav-item">
-                  <a href="https://www.facebook.com/redfenixeng" target="_blank" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="logo-facebook"></ion-icon></a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.instagram.com/redfenix.eng/?hl=pt" target="_blank" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="logo-instagram"></ion-icon></a>
-                </li>
-                <li class="nav-item">
-                  <a href="mailto:geral@redfenix.pt" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="mail-outline"></ion-icon></a>
-                </li>
-                <li class="nav-item">
-                  <a href="tel:00351249119339" class="text-decoration-none color-w3 d-inline-block fs-5"><ion-icon name="call-outline"></ion-icon></a>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div class="position-absolute collapse navbar-collapse end-0 top-0 mt-2 me-4">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center gap-2">
+              <li class="nav-item">
+                <a href="" class="text-decoration-none" style="font-size: 1.1rem">🇵🇹</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="text-decoration-none" style="font-size: 1.1rem">🇬🇧</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/redfenixeng" target="_blank" class="text-decoration-none color-w3 d-flex justify-content-center align-items-center" style="font-size: 1.1rem"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/redfenix.eng/?hl=pt" target="_blank" class="text-decoration-none color-w3 d-flex justify-content-center align-items-center" style="font-size: 1.1rem"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li class="nav-item">
+                <a href="mailto:geral@redfenix.pt" class="text-decoration-none color-w3 d-flex justify-content-center align-items-center" style="font-size: 1.1rem"><ion-icon name="mail-outline"></ion-icon></a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:00351249119339" class="text-decoration-none color-w3 d-flex justify-content-center align-items-center" style="font-size: 1.1rem"><ion-icon name="call-outline"></ion-icon></a>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>
+
+      {{-- Cookies --}}
+      <div class="d-none position-fixed w-100 h-100 bg-black bg-opacity-50 z-3">
+        <div class="position-absolute bottom-0 w-100 bg-w1">
+          <div class="container py-4">
+            <div class="d-flex justify-content-center align-items-lg-start align-items-center flex-column">
+              <h1 class="display-4 russo color-cinzaNor text-center">AVISO DE COOKIES<span class="color-redNor">.</span></h1>
+              <p class="roboto color-cinzaNor text-lg-start text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque deleniti fugiat eos voluptates mollitia. Itaque quisquam aspernatur dolores natus dolor sit aut quia esse necessitatibus tenetur voluptatum sapiente cum fuga rem officiis atque, hic magni quibusdam quaerat! Eveniet velit sapiente tempora commodi. Accusamus ipsa sed ex reiciendis deleniti culpa nisi placeat adipisci aperiam omnis optio numquam.</p>
+            </div>
+            <div class="d-flex justify-content-lg-end justify-content-center align-items-center gap-3 flex-shrink-1 flex-fill flex-grow-1 mt-lg-2 mt-4">
+              <button class="bg-w1 color-redNor px-4 py-2 roboto fw-bold rounded-1 d-flex justify-content-center align-items-center gap-2" style="border: 2px solid #cc0033"><ion-icon name="hammer-outline" class="color-redNor fs-5"></ion-icon> PERSONALIZAR</button>
+              <button class="js-cookie-consent-agree bg-redNor color-w1 px-4 py-2 roboto fw-bold rounded-1 d-flex justify-content-center align-items-center gap-2" style="border: 2px solid #cc0033"><ion-icon name="checkmark-outline" class="color-w1 fs-5"></ion-icon> ACEITAR TODOS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{-- Top Button --}}
+      <div id="progress" class="top-button">
+        <span id="progressStyle"><ion-icon name="caret-up-outline"></ion-icon></span>
+      </div>
 
       {{-- CONTENT --}}
       <main class="position-relative overflow-hidden">
@@ -139,8 +171,9 @@
               <h5 class="color-w1 m-0" style="font-size: .875rem">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Norlogic</h5>
               <p class="color-b5 m-0 mt-2" style="font-size: .75rem">A Norlogic é uma marca registada em Portugal sob o número 591278 e propriedade da Norlogic Engenharia Lda.</p>
             </div>
-            <div class="col-auto">
-              <a href="/"><img class="d-lg-block d-none" src="/img/favicon.svg" width="50" alt=""></a>
+            <div class="col-auto d-flex justify-content-center mt-3 align-items-center gap-2">
+              <a href="https://www.livroreclamacoes.pt/INICIO/" target="_blank" class="text-decoration-none color-b5" style="font-size: .75rem"><img src="/img/livro_de_reclamacao.png" width="100px" alt="Livro de Reclamações"></a>
+              <a href="/"><img class="" src="/img/favicon.svg" width="50" alt="Logo Norlogic"></a>
             </div>
           </div>
         </div>
