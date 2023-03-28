@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/academia', function () {
+    return view('academia');
+});
+
+Route::get('/politica_de_privacidade', function () {
+    return view('privacidade');
+});
+
+Route::get('/send', [App\Http\Controllers\MailController::class, "sendMail"]);

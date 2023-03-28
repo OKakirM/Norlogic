@@ -1,0 +1,127 @@
+{
+    "Body": "pt",
+
+    "Header": {
+        "op1": "Soluções",
+        "op2": "Produtos",
+        "op3": "Sobre Nós",
+        "op4": "Contacto",
+        "op5": "Academia"
+    },
+
+    "Cookies": {
+        "texto": "Este site utiliza cookies para lhe proporcionar uma melhor experiência. Ao navegar no mesmo, está a consentir a sua utilização. Caso pretenda saber mais, consulte a nossa <a href=\"/politica_de_privacidade\" target=\"_blank\">Política de Privacidade</a>.",
+        "aceitar": "Aceito",
+        "negar": "Não, obrigado"
+    },
+
+    "Introdução": {
+        "subtitulo1": "Hardware & Software",
+        "titulo1": "DESENVOLVIMENTO E ASSISTÊNCIA",
+        "subtitulo2": "Serviço & Manutenção",
+        "titulo2": "SISTEMAS OPERATIVOS E TELEMÓVEIS"
+    },
+
+    "Soluções": {
+        "subtítulo": "Informação Breve",
+        "titulo": "soluções",
+        "solução1": {
+            "titulo": "Criação de Hardware e Software",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        },
+        "solução2": {
+            "titulo": "Assistência Técnica Eletrónica",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        },
+        "solução3": {
+            "titulo": "Manutenção Eletrónica Industrial",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        },
+        "solução4": {
+            "titulo": "Comercialização de Componentes",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        }
+    },
+
+    "Projetos": {
+        "subtítulo": "Informação Breve",
+        "titulo": "projetos",
+        "projeto1": {
+            "titulo": "Robôs em <br> Arduino",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto2": {
+            "titulo": "Leitores de <br> Cartão",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto3": {
+            "titulo": "Próteses <br> Mecânicas",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto4": {
+            "titulo": "Robôs em <br> Arduino",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto5": {
+            "titulo": "Leitores de <br> Cartão",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto6": {
+            "titulo": "Próteses <br> Mecânicas",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        }
+    },
+
+    "Produtos": {
+        "subtitulo": "Informação Breve",
+        "título": "produtos",
+        "drops": {
+            "título": "Drops",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?"
+        },
+        "dqpool": {
+            "título": "DQPool",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?"
+        },
+        "adspot": {
+            "título": "AdSpot",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?"
+        }
+    },
+
+    "Sobre": {
+        "subtitulo": "Informação Breve",
+        "titulo": "sobre nós",
+        "conteudo": {
+            "subtitulo": "Lorem ipsum dolor sit.",
+            "titulo": "o que é a norlogic",
+            "texto": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+            "info": "Curioso? Entre em contacto!"
+        }
+    },
+
+    "Contacto": {
+        "subtitulo": "Informação Breve",
+        "titulo": "contacto",
+        "conteudo": {
+            "subtitulo": "Estamos disponíveis! Pode:",
+            "titulo": "quer falar conosco",
+            "telefone": "Ligar",
+            "email": "Enviar um email",
+            "lugar": "Visita-nos"
+        },
+        "formulario": {
+            "titulo": "Envie-nos uma mensagem",
+            "nome": "Nome",
+            "email": "Email",
+            "mensagem": "Mensagem",
+            "enviar": "ENVIAR",
+            "enviado": "A mensagem foi enviada com sucesso!"
+        }
+    },
+
+    "Footer": {
+        "conteudo": "A Norlogic é uma marca registada em Portugal sob o número 591278 e propriedade da RedFénix Engenharia Lda.",
+        "privacidade": "Políticas de Privacidade"
+    }
+}

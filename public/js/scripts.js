@@ -3,10 +3,15 @@ const li = document.querySelectorAll("#nav-items");
 const section = document.querySelectorAll("section");
 
 function activeMenu() {
-    let len = section.length;
-    while (--len && window.scrollY + 300 < section[len].offsetTop) {}
-    li.forEach((ltx) => ltx.classList.remove("nav-active"));
-    li[len].classList.add("nav-active");
+    if (window.location.pathname == "/academia") {
+        li[4].classList.add("nav-active");
+        li[0].classList.remove("nav-active");
+    } else {
+        let len = section.length;
+        while (--len && window.scrollY + 300 < section[len].offsetTop) {}
+        li.forEach((ltx) => ltx.classList.remove("nav-active"));
+        li[len].classList.add("nav-active");
+    }
 }
 
 activeMenu();
@@ -73,10 +78,10 @@ function changeInfo(info) {
     if (info.id == "info5" || info.id == "info6") {
         document
             .getElementById("info4")
-            .classList.replace("color-redNor", "color-cinzaNor");
+            .classList.replace("color-redNor", "color-w1");
     }
-    currentInfo.classList.replace("color-redNor", "color-cinzaNor");
-    info.classList.replace("color-cinzaNor", "color-redNor");
+    currentInfo.classList.replace("color-redNor", "color-w1");
+    info.classList.replace("color-w1", "color-redNor");
     currentInfo = info;
 }
 
@@ -122,6 +127,8 @@ function changeSelection(select) {
         currentImage = document.getElementById("preview_7");
     }
 }
+
+// Soluções
 var currentService;
 if (document.documentElement.offsetWidth < 700) {
     var serviceClass = document.querySelectorAll(".unfocus");
@@ -134,11 +141,34 @@ if (document.documentElement.offsetWidth < 700) {
 }
 
 function setService(service) {
-    console.log(document.documentElement.offsetWidth);
-    service.classList.replace("unfocus", "focus");
-    if (currentService && currentService != service) {
-        currentService.classList.replace("focus", "unfocus");
+    if (document.documentElement.offsetWidth > 700) {
+        service.classList.replace("unfocus", "focus");
+        if (currentService && currentService != service) {
+            currentService.classList.replace("focus", "unfocus");
+        }
+        currentService = service;
     }
-    currentService = service;
-    console.log(currentService);
 }
+
+// Tradução
+var pt = document.querySelectorAll("#pt");
+var en = document.querySelectorAll("#en");
+
+function changeLanguage() {
+    for (i = 0; i < document.cookie.split(";").length; i++) {
+        if (document.cookie.split(";")[i] == "language=pt") {
+            for (e = 0; e < 2; e++) {
+                pt[e].classList.replace("color-w3", "color-redNor");
+                en[e].classList.replace("color-redNor", "color-w3");
+            }
+        }
+
+        if (document.cookie.split(";")[i] == "language=en") {
+            for (e = 0; e < 2; e++) {
+                en[e].classList.replace("color-w3", "color-redNor");
+                pt[e].classList.replace("color-redNor", "color-w3");
+            }
+        }
+    }
+}
+changeLanguage();

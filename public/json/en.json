@@ -1,0 +1,127 @@
+{
+    "Body": "en",
+
+    "Header": {
+        "op1": "Solutions",
+        "op2": "Products",
+        "op3": "About Us",
+        "op4": "Contact",
+        "op5": "Academy"
+    },
+
+    "Cookies": {
+        "texto": "This website uses cookies to provide you with a better experience. By browsing it, you are consenting to its use. If you want to know more, consult our <a href=\"/politica_de_privacidade\" target=\"_blank\">Privacy Policy</a>.",
+        "aceitar": "Sure",
+        "negar": "No, thanks"
+    },
+
+    "Introdução": {
+        "subtitulo1": "Hardware & Software",
+        "titulo1": "DEVELOPMENT AND ASSISTANCE",
+        "subtitulo2": "Service & Maintenance",
+        "titulo2": "OPERATING SYSTEMS AND MOBILE PHONES"
+    },
+
+    "Soluções": {
+        "subtítulo": "Brief Information",
+        "titulo": "solutions",
+        "solução1": {
+            "titulo": "Hardware and Software Creation",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        },
+        "solução2": {
+            "titulo": "Electronic Technical Assistance",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        },
+        "solução3": {
+            "titulo": "Industrial Electronic Maintenance",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        },
+        "solução4": {
+            "titulo": "Component Sales",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        }
+    },
+
+    "Projetos": {
+        "subtítulo": "Brief Information",
+        "titulo": "projects",
+        "projeto1": {
+            "titulo": "Robots made of Arduino",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto2": {
+            "titulo": "Card Readers",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto3": {
+            "titulo": "Mechanical Prostheses",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto4": {
+            "titulo": "Robots made of Arduino",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto5": {
+            "titulo": "Card Readers",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        },
+        "projeto6": {
+            "titulo": "Mechanical Prostheses",
+            "conteudo": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et."
+        }
+    },
+
+    "Produtos": {
+        "subtitulo": "Brief Information",
+        "título": "products",
+        "drops": {
+            "título": "Drops",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?"
+        },
+        "dqpool": {
+            "título": "DQPool",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?"
+        },
+        "adspot": {
+            "título": "AdSpot",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis enim magnam deserunt modi molestiae id veniam labore quo dolorum optio aperiam corporis nam?"
+        }
+    },
+
+    "Sobre": {
+        "subtitulo": "Brief Information",
+        "titulo": "about us",
+        "conteudo": {
+            "subtitulo": "Lorem ipsum dolor sit.",
+            "titulo": "what is norlogic",
+            "texto": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+            "info": "Curious? Contact us!"
+        }
+    },
+
+    "Contacto": {
+        "subtitulo": "Brief Information",
+        "titulo": "contact",
+        "conteudo": {
+            "subtitulo": "We are available! You can:",
+            "titulo": "want to talk to us",
+            "telefone": "Call",
+            "email": "Send an email",
+            "lugar": "Visit us"
+        },
+        "formulario": {
+            "titulo": "Send us a message",
+            "nome": "Name",
+            "email": "Email",
+            "mensagem": "Message",
+            "enviar": "SUBMIT",
+            "enviado": "The message was successfully sent!"
+        }
+    },
+
+    "Footer": {
+        "conteudo": "Norlogic is a registered trademark in Portugal under number 591278 and owned by RedFénix Engenharia Lda.",
+        "privacidade": "Privacy Policy"
+    }
+}

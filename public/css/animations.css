@@ -67,6 +67,10 @@
     }
 }
 
+#cookies-popup {
+    animation: opacity 0.3s ease;
+}
+
 #drops,
 #dqpool,
 #spot {
